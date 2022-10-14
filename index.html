@@ -103,6 +103,59 @@
         </tr>
       </tbody>
     </table>
+
+    <form action="/" method="get">
+      <fieldset>
+        <legend>My first form</legend>
+        <label for="name">Name</label><br />
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+        /><br />
+        <label for="email">Email</label><br />
+        <input id="email" type="email" name="email" required /><br />
+        <label for="password">Password</label><br />
+        <input id="password" type="password" name="password" required /><br />
+        <label for="level">Your programming level </label><br />
+        <input id="level" type="range" name="level" min="1" max="10" /><br />
+        <div><p>What does HTML stand for?</p></div>
+        <div>
+          <input id="html-1" type="checkbox" name="html" value="1" />
+          <label for="html-1">Hyperlinks and Text Markup Language</label><br />
+          <input id="html-2" type="checkbox" name="html" value="2" />
+          <label for="html-2">Home tool Markup Language</label><br />
+          <input id="html-3" type="checkbox" name="html" value="3" />
+          <label for="html-3">Hyper Text Markup Language</label><br />
+        </div>
+        <p></p>
+        <p>What does HTTP stand for?</p>
+        <div>
+          <input id="http-1" type="radio" name="http" value="1" />
+          <label for="http-1">Hyper Text Translate Protocol</label><br />
+          <input id="http-2" type="radio" name="http" value="2" />
+          <label for="http-2">Hyper Text Transmission Protocol</label><br />
+          <input id="http-3" type="radio" name="http" value="3" />
+          <label for="http-3">Hyper Text Transfer Protocol</label><br />
+        </div>
+        <label for="comment">Comment</label><br />
+        <textarea id="comment" placeholder="Comment" maxlength="500">
+Comment</textarea
+        ><br />
+        <label for="htmlselect"> What does HTML stand for?</label><br />
+        <select id="htmlselect" name="htmlselect">
+          <option value="1" selected>Your answer</option>
+          <option value="2">Hyperlinks and Text Markup Language</option>
+          <option value="3">Home tool Markup Language</option>
+          <option value="4">Hyper Text Markup Language</option>
+        </select>
+        <br />
+        <p></p>
+        <button>send</button>
+      </fieldset>
+    </form>
     <hr />
   </body>
 </html>
