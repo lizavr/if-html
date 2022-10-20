@@ -5,23 +5,23 @@
   box-sizing: border-box;
   font-weight: 400;
 }
-.wrapper {
+.offer {
   font-family: Roboto, sans-serif;
   font-size: 24px;
   color: #383838;
 }
 .container {
-  width: 100%;
   max-width: 1235px;
   margin: 0 auto;
 }
-.offer {
+title {
+  display: block;
   text-align: center;
   padding-top: 120px;
   font-weight: 500;
   font-size: 40px;
 }
-.offer:after {
+title:after {
   content: "";
   display: block;
   height: 4px;
@@ -30,15 +30,14 @@
   margin: 20px auto;
 }
 .advantages {
-  margin-top: 85px;
+  margin: 85px 0 65px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 65px;
 }
 .advantages-item {
   width: 25%;
   text-align: center;
 }
-.item-text {
+.advantages-text {
   margin: 40px 0px;
 }
