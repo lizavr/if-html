@@ -30,14 +30,15 @@ title:after {
   margin: 20px auto;
 }
 .advantages {
-  margin: 85px 0 65px;
+  margin: 85px 0 125px;
   display: flex;
   justify-content: space-between;
+  gap: 16px;
 }
 .advantages-item {
   width: 25%;
   text-align: center;
 }
 .advantages-text {
-  margin: 40px 0px;
+  margin-top: 40px;
 }
