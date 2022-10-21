@@ -41,4 +41,47 @@ title:after {
 .advantages-text {
   margin-top: 40px;
 }
+/*/////////////footer///////////*/
+.footer {
+  background-color: #10367c;
+  color: #ffffff;
+}
 
+.columns {
+  padding-top: 120px;
+  display: flex;
+  column-gap: 20px;
+  text-align: left;
+}
+.column-list {
+  display: flex;
+}
+ul {
+  width: 33.3333%;
+}
+li {
+  list-style-type: none;
+  margin: 20px 0;
+}
+li:last-child {
+  margin: 0px;
+}
+li:hover {
+  text-decoration: underline;
+}
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 1.172;
+}
+
+.navigation {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+}
+.faq {
+  text-transform: uppercase;
+}
