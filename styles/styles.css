@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  color: #383838;
+}
+.container {
+  max-width: 1235px;
+  margin: 0 auto;
+}
+
+title {
+  display: block;
+  text-align: center;
+  padding-top: 120px;
+  font-weight: 500;
+  font-size: 40px;
+}
+title:after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100px;
+  background-color: #f5bd41;
+  margin: 20px auto;
+}
+.advantages {
+  margin: 85px 0 125px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.advantages-item {
+  width: 25%;
+  text-align: center;
+}
+.advantages-text {
+  margin-top: 40px;
+}
+
