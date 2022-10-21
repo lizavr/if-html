@@ -61,7 +61,7 @@ title:after {
 }
 li {
   list-style-type: none;
-  margin: 18px 0;
+  margin: 24px 0;
 }
 li:last-child {
   margin: 0;
@@ -73,7 +73,7 @@ li:hover {
   color: #ffffff;
   text-decoration: none;
   font-size: 20px;
-  line-height: 1.172;
+  line-height: 1.2;
 }
 .faq {
   text-transform: uppercase;
@@ -81,6 +81,6 @@ li:hover {
 .copyright {
   color: #ffffff;
   font-size: 14px;
-  line-height: 1.17;
-  margin-top: 65px;
+  line-height: 1.2;
+  margin-top: 60px;
 }
