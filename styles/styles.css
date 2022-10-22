@@ -13,15 +13,16 @@
 .container {
   max-width: 1235px;
   margin: 0 auto;
+  padding: 120px 0 115px;
+  background-color: #b1e1e1;
 }
-title {
+h2 {
   display: block;
   text-align: center;
-  padding-top: 120px;
   font-weight: 500;
   font-size: 40px;
 }
-title:after {
+h2:after {
   content: "";
   display: block;
   height: 4px;
@@ -30,10 +31,14 @@ title:after {
   margin: 20px auto;
 }
 .advantages {
-  margin: 85px 0 125px;
+  margin-top: 85px;
   display: flex;
   justify-content: space-between;
   gap: 16px;
+}
+img {
+  display: block;
+  margin: 0 auto;
 }
 .advantages-item {
   width: 25%;
