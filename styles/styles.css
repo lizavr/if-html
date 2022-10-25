@@ -20,7 +20,6 @@ body {
   max-width: 1235px;
   margin: 0 auto;
   padding: 120px 0 115px;
-  background-color: #b1e1e1;
 }
 h2 {
   display: block;
@@ -38,12 +37,9 @@ h2:after {
 }
 .advantages {
   margin: 85px 0 125px;
-=======
-  margin: 20px auto;
 }
 .advantages {
   margin-top: 85px;
->>>>>>> main
   display: flex;
   justify-content: space-between;
   gap: 16px;
