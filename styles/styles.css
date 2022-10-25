@@ -1,9 +1,9 @@
-@import url("fonts.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  font-weight: 400;
 }
 body {
   font-weight: 400;
@@ -11,19 +11,24 @@ body {
   font-size: 24px;
   color: #383838;
 }
+.offer {
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  color: #383838;
+}
 .container {
   max-width: 1235px;
   margin: 0 auto;
+  padding: 120px 0 115px;
+  background-color: #b1e1e1;
 }
-/*/////////////offer///////////////*/
-title {
+h2 {
   display: block;
   text-align: center;
-  padding-top: 120px;
   font-weight: 500;
   font-size: 40px;
 }
-title:after {
+h2:after {
   content: "";
   display: block;
   height: 4px;
@@ -33,9 +38,19 @@ title:after {
 }
 .advantages {
   margin: 85px 0 125px;
+=======
+  margin: 20px auto;
+}
+.advantages {
+  margin-top: 85px;
+>>>>>>> main
   display: flex;
   justify-content: space-between;
   gap: 16px;
+}
+img {
+  display: block;
+  margin: 0 auto;
 }
 .advantages-item {
   width: 25%;
