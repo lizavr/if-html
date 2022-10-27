@@ -5,6 +5,12 @@
   box-sizing: border-box;
   font-weight: 400;
 }
+body {
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  color: #383838;
+}
 .offer {
   font-family: Roboto, sans-serif;
   font-size: 24px;
@@ -14,7 +20,6 @@
   max-width: 1235px;
   margin: 0 auto;
   padding: 120px 0 115px;
-  background-color: #b1e1e1;
 }
 h2 {
   display: block;
@@ -27,7 +32,11 @@ h2:after {
   display: block;
   height: 4px;
   width: 100px;
+  background-color: #f5bd41;
   margin: 20px auto;
+}
+.advantages {
+  margin: 85px 0 125px;
 }
 .advantages {
   margin-top: 85px;
@@ -45,4 +54,44 @@ img {
 }
 .advantages-text {
   margin-top: 40px;
+}
+/*/////////////footer///////////*/
+.footer {
+  background-color: #10367c;
+  padding: 120px 0;
+}
+.columns {
+  display: flex;
+  column-gap: 20px;
+}
+.navigation {
+  width: 33%;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+}
+li {
+  list-style-type: none;
+  margin: 24px 0;
+}
+li:last-child {
+  margin: 0;
+}
+li:hover {
+  text-decoration: underline;
+}
+.column-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.faq {
+  text-transform: uppercase;
+}
+.copyright {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.2;
+  margin-top: 60px;
 }
