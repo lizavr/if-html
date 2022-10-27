@@ -15,19 +15,29 @@
   </head>
   <body>
     <header>
-      <div class="container header-container">
+      <div class="header-container">
         <div class="header-inner">
-          <div class="header-logo">
-            <img src="./img/icons/main_logo.svg" alt="TripHouse" />
-          </div>
+          <img
+            src="./img/icons/main_logo.svg"
+            alt="TripHouse"
+            class="header-logo"
+          />
           <div class="header-navigation">
             <a href="#" class="header-link header-link-text">Stays</a>
             <a href="#" class="header-link header-link-text">Attractions</a>
-            <a href="#" class="header-link header-link-icon">
-              <img src="./img/icons/icon_night.svg" alt="icon_night" />
+            <a href="#" class="header-link">
+              <img
+                src="./img/icons/icon_night.svg"
+                alt="icon_night"
+                class="header-icon"
+              />
             </a>
-            <a href="#" class="header-link header-link-icon">
-              <img src="./img/icons/icon_acc_circle.svg" alt="icon_account" />
+            <a href="#" class="header-link">
+              <img
+                src="./img/icons/icon_acc_circle.svg"
+                alt="icon_account"
+                class="header-icon"
+              />
             </a>
           </div>
         </div>
@@ -35,18 +45,59 @@
     </header>
     <main>
       <section class="top-block">
-        <div class="container">
-          <div class="top-block__title">
-            Discover stays to live, work or just relax
+        <div class="top-block__filter">
+          <div class="container">
+            <div class="top-block__title">
+              Discover stays<br />
+              to live, work or just relax
+            </div>
+            <form action="#" method="post" class="top-block__forms">
+              <div class="form__common">
+                <label for="city" class="label__text"
+                  >Your destination or hotel name</label
+                >
+                <input
+                  class="top-block__form"
+                  id="city"
+                  type="text"
+                  placeholder="New York"
+                />
+              </div>
+
+              <div class="form__common">
+                <label for="date" class="label__text"
+                  >Check-in — Check-out</label
+                >
+                <input
+                  class="top-block__form top-block__form-border"
+                  id="date"
+                  type="text"
+                  placeholder="date"
+                />
+              </div>
+
+              <div class="form__common">
+                <input
+                  class="top-block__form"
+                  type="text"
+                  placeholder="2 Adults — 0 Children — 1 Room"
+                />
+              </div>
+              <button type="submit" class="form__button">Search</button>
+            </form>
+            <div class="top-block__apps">
+              <img
+                src="./img/icons/icon_google-play.svg"
+                alt="google-play"
+                class="top-block__app"
+              />
+              <img
+                src="./img/icons/icon_app_store.svg"
+                alt="app_store"
+                class="top-block__app"
+              />
+            </div>
           </div>
-          <form action="#" method="post" class="top-block__forms">
-            <label for="city">Your destination or hotel name</label>
-            <input id="city" type="text" placeholder="New York" />
-            <label for="date">Check-in — Check-out</label>
-            <input id="date" type="date" placeholder="date" />
-            <input type="text" placeholder="2 Adults — 0 Children — 1 Room" />
-            <button type="submit" class="form__button">Search</button>
-          </form>
         </div>
       </section>
 
