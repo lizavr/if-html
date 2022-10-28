@@ -9,51 +9,148 @@
       name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
+    <link rel="icon" href="./img/icons/car.ico" />
     <link rel="stylesheet" href="./styles/styles.css" />
-
     <title>Title</title>
   </head>
   <body>
-    <section class="offer">
-      <div class="container">
-        <h2>What do we offer</h2>
-        <div class="advantages">
-          <div class="advantages-item">
-            <img src="./img/icons/icon_support.svg" alt="icon support" />
-            <p class="advantages-text">Support 24/7</p>
-          </div>
-          <div class="advantages-item">
-            <img
-              src="./img/icons/icon_communicate.svg"
-              alt="icon communicate"
-            />
-            <p class="advantages-text">Communicate directly</p>
-          </div>
-          <div class="advantages-item">
-            <img
-              src="./img/icons/icon_book_online.svg"
-              alt="icon book online"
-            />
-            <p class="advantages-text">Book online</p>
-          </div>
-          <div class="advantages-item">
-            <img src="./img/icons/icon_review.svg" alt="icon review" />
-            <p class="advantages-text">Real guest reviews</p>
+    <main>
+      <section class="top-block">
+        <div class="top-block__filter">
+          <header>
+            <div class="header-container">
+              <div class="header-inner">
+                <img
+                  src="./img/icons/main_logo.svg"
+                  alt="TripHouse"
+                  class="header-logo"
+                />
+                <div class="header-navigation">
+                  <a href="#" class="header-link header-link-text">Stays</a>
+                  <a href="#" class="header-link header-link-text"
+                    >Attractions</a
+                  >
+                  <a href="#" class="header-link">
+                    <img
+                      src="./img/icons/icon_night.svg"
+                      alt="icon_night"
+                      class="header-icon"
+                    />
+                  </a>
+                  <a href="#" class="header-link">
+                    <img
+                      src="./img/icons/icon_acc_circle.svg"
+                      alt="icon_account"
+                      class="header-icon"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </header>
+          <div class="header-container">
+            <h1 class="top-block__title">
+              Discover stays<br />
+              to live, work or just relax
+            </h1>
+            <form action="#" method="post" class="top-block__forms">
+              <div class="form__common form__city">
+                <label for="city" class="label__text"
+                  >Your destination or hotel name</label
+                >
+                <input
+                  class="top-block__form"
+                  id="city"
+                  type="text"
+                  placeholder="New York"
+                />
+              </div>
+              <div class="form__common form__date">
+                <label for="date" class="label__text"
+                  >Check-in — Check-out</label
+                >
+                <input
+                  class="top-block__form top-block__form-border"
+                  id="date"
+                  type="text"
+                  placeholder="Tue 15 Sept — Sat 19 Sept"
+                />
+              </div>
+              <div class="form__common form__people">
+                <input
+                  class="top-block__form"
+                  type="text"
+                  placeholder="2 Adults — 0 Children — 1 Room"
+                />
+              </div>
+              <button type="submit" class="form__button">Search</button>
+            </form>
+            <div class="top-block__apps">
+              <img
+                src="./img/icons/icon_google-play.svg"
+                alt="google-play"
+                class="top-block__app"
+              />
+              <img
+                src="./img/icons/icon_app_store.svg"
+                alt="app_store"
+                class="top-block__app"
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section class="offer">
+        <div class="container">
+          <h2>What do we offer</h2>
+          <div class="advantages">
+            <div class="advantages-item">
+              <img
+                src="./img/icons/icon_support.svg"
+                class="advantages-img"
+                alt="icon support"
+              />
+              <p class="advantages-text">Support 24/7</p>
+            </div>
+            <div class="advantages-item">
+              <img
+                src="./img/icons/icon_communicate.svg"
+                class="advantages-img"
+                alt="icon communicate"
+              />
+              <p class="advantages-text">Communicate directly</p>
+            </div>
+            <div class="advantages-item">
+              <img
+                src="./img/icons/icon_book_online.svg"
+                class="advantages-img"
+                alt="icon book online"
+              />
+              <p class="advantages-text">Book online</p>
+            </div>
+            <div class="advantages-item">
+              <img
+                src="./img/icons/icon_review.svg"
+                class="advantages-img"
+                alt="icon review"
+              />
+              <p class="advantages-text">Real guest reviews</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <div class="container">
         <div class="columns">
-          <ul class="column-about navigation">
+          <ul class="column-about footer-navigation">
             About
             <li><a href="#" class="column-link">How Triphouse works</a></li>
             <li><a href="#" class="column-link">Careers</a></li>
             <li><a href="#" class="column-link">Privacy</a></li>
             <li><a href="#" class="column-link">Terms</a></li>
           </ul>
-          <ul class="column-property navigation">
+          <ul class="column-property footer-navigation">
             Property types
             <li><a href="#" class="column-link">Guest houses</a></li>
             <li><a href="#" class="column-link">Hotels</a></li>
@@ -62,7 +159,7 @@
             <li><a href="#" class="column-link">Holiday homes</a></li>
             <li><a href="#" class="column-link">Hostels</a></li>
           </ul>
-          <ul class="column-support navigation">
+          <ul class="column-support footer-navigation">
             Support
             <li>
               <a href="#" class="column-link">Contact Customer Service</a>
