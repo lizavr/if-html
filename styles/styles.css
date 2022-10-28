@@ -25,6 +25,14 @@ body {
   justify-content: space-between;
   padding: 50px 0 23px;
 }
+.header-img {
+  width: 30px;
+  height: 30px;
+}
+.header-img-logo{
+  width: 205px;
+  height: 40px;
+}
 .header-logo {
   display: block;
 }
@@ -154,6 +162,16 @@ body {
   display: flex;
   justify-content: center;
   gap: 16px;
+}
+.top-block__app-google{
+  width: 135px;
+  height: 40px;
+
+}
+.top-block__app-store{
+  width: 120px;
+  height: 40px;
+
 }
 
 /*/////////////////offer/////////////////*/
