@@ -26,10 +26,10 @@ body {
   padding: 50px 0 23px;
 }
 .header-img {
-  width: 30px;
-  height: 30px;
+  max-width: 30px;
+  max-height: 30px;
 }
-.header-img-logo{
+.header-img-logo {
   width: 205px;
   height: 40px;
 }
@@ -163,15 +163,13 @@ body {
   justify-content: center;
   gap: 16px;
 }
-.top-block__app-google{
-  width: 135px;
-  height: 40px;
-
+.top-block__app-google {
+  max-width: 135px;
+  max-height: 40px;
 }
-.top-block__app-store{
-  width: 120px;
-  height: 40px;
-
+.top-block__app-store {
+  max-width: 120px;
+  max-height: 40px;
 }
 
 /*/////////////////offer/////////////////*/
@@ -211,6 +209,8 @@ h2:after {
   gap: 16px;
 }
 .advantages-img {
+  max-height: 100px;
+  max-width: 100px;
   display: block;
   margin: 0 auto;
 }
