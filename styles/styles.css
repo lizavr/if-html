@@ -16,56 +16,59 @@ body {
 
 /*//////////header////////////*/
 
-.header-container {
+.header__container {
   max-width: 1235px;
   margin: 0 auto;
 }
-.header-inner {
+.header__inner {
   display: flex;
   justify-content: space-between;
   padding: 50px 0 23px;
 }
-.header-img {
-  max-width: 30px;
-  max-height: 30px;
+.header__img--logo {
+  max-width: 205px;
+  max-height: 40px;
 }
-.header-img-logo {
-  width: 205px;
-  height: 40px;
-}
-.header-logo {
-  display: block;
-}
-.header-navigation {
+/*.header-logo {*/
+/*  display: block;*/
+/*}*/
+.header__navigation {
   display: inline-block;
 }
-.header-link {
+.navigation__link--icon {
+  max-width: 30px;
+  max-height: 30px;
+  fill: #ffffff;
+  stroke: #ffffff;
+
+}
+.navigation__link {
   margin-right: 24px;
   text-decoration: none;
   color: #ffffff;
   position: relative;
 }
-.header-link:last-child {
+.navigation__link:last-child {
   margin: 0;
 }
-.header-link:nth-child(2) {
+.navigation__link:nth-child(2) {
   margin-right: 48px;
 }
-.header-link:hover {
+.navigation__link:hover {
   text-decoration: none;
 }
-.header-link:after {
+.navigation__link:after {
   content: "";
   position: absolute;
   z-index: 1;
   background-color: #f5bd41;
   opacity: 0;
 }
-.header-link:hover:after {
+.navigation__link:hover:after {
   opacity: 1;
   display: block;
 }
-.header-link-text:after {
+.navigation__link--text:after {
   display: block;
   height: 4px;
   top: 100%;
@@ -73,9 +76,11 @@ body {
   width: 100%;
   margin: 12px auto 0;
 }
-.header-icon:hover {
-  background-color: #f5bd41;
-  border-radius: 50%;
+.navigation__link--icon:hover {
+  stroke: #f5bd41;
+  fill: #f5bd41;
+  width: 30px;
+  height: 30px;
 }
 
 /*/////////////////////////main///////////////*/
@@ -166,7 +171,7 @@ body {
 .top-block__app-google {
   max-width: 135px;
   max-height: 40px;
-}
+  }
 .top-block__app-store {
   max-width: 120px;
   max-height: 40px;
