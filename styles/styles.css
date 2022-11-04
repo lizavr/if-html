@@ -159,10 +159,7 @@ body {
   justify-content: center;
   gap: 16px;
 }
-.top-block__app-google {
-  width: 135px;
-  height: 40px;
-}
+
 .top-block__app-store {
   width: 120px;
   height: 40px;
