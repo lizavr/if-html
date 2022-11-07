@@ -348,8 +348,7 @@ body {
     fill: #ffffff;
   }
   .footer__columns {
-    text-align: center;
-    column-gap: 16px;
+    justify-content: center;
   }
   .footer__copyright {
     margin-top: 32px;
@@ -379,9 +378,6 @@ body {
   }
   .col-xs-6 {
     width: 100%;
-  }
-  .col-xs-auto {
-    width: auto;
   }
   .container__mobile {
     padding-top: 24px;
@@ -413,9 +409,6 @@ body {
   }
   .column__navigation__element {
     margin: 0;
-  }
-  .footer__columns {
-    justify-content: center;
   }
   .footer__copyright {
     margin-top: 32px;
