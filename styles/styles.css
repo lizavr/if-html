@@ -115,7 +115,6 @@ body {
   font-size: 50px;
   font-weight: 500;
   color: #ffffff;
-  line-height: 1.18;
   margin: 175px 0 145px;
   max-width: 545px;
 }
@@ -349,6 +348,13 @@ body {
   .footer__column__navigation {
     text-decoration: underline;
   }
+  .header__inner {
+    padding: 18px 0;
+  }
+  .header__inner__logo {
+    height: 40px;
+    width: 140px;
+  }
   .column__navigation__link {
     display: none;
   }
@@ -358,10 +364,24 @@ body {
   .navigation__link:last-child {
     margin: 15px;
   }
+  .navigation__link__icon_1 {
+    width: 25px;
+    height: 25px;
+  }
+  .navigation__link__icon_2 {
+    width: 30px;
+    height: 30px;
+  }
+  .navigation__link {
+    margin-right: 10px;
+  }
+  .navigation__link:last-child {
+    margin: 0;
+  }
   .burger__menu {
     position: relative;
-    width: 40px;
-    height: 30px;
+    width: 35px;
+    height: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -371,11 +391,16 @@ body {
   .burger__menu:after {
     content: "";
     background-color: #fff;
-    height: 4px;
+    height: 3px;
   }
   .burger__menu__center {
     background-color: #fff;
-    height: 4px;
+    height: 3px;
+  }
+  .top-block__title {
+    font-size: 35px;
+    margin: 100px 0 90px;
+    width: 100%;
   }
 
   .footer__logo-mobile {
@@ -421,19 +446,6 @@ body {
     padding-top: 24px;
   }
 
-  .header__inner {
-    padding: 12px 0;
-  }
-  .header__inner__logo {
-    height: 24px;
-    width: 120px;
-  }
-  .navigation__link {
-    margin-right: 10px;
-  }
-  .navigation__link:last-child {
-    margin: 0;
-  }
   .navigation__link__icon_1 {
     width: 16px;
     height: 16px;
@@ -456,7 +468,11 @@ body {
   .burger__menu__center {
     height: 2px;
   }
-
+  .top-block__title {
+    font-size: 30px;
+    margin: 40px 0 30px;
+    width: 100%;
+  }
   .offer__advantages {
     margin-top: 0;
   }
