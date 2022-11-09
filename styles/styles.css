@@ -34,19 +34,23 @@ body {
   fill: #3077c6;
 }
 .header__inner__navigation {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+}
+.burger-menu {
+  display: none;
 }
 .navigation__link {
-  margin-right: 24px;
+  margin-right: 20px;
   text-decoration: none;
   color: #ffffff;
   position: relative;
 }
+.navigation__block-one {
+  margin-right: 48px;
+}
 .navigation__link:last-child {
   margin: 0;
-}
-.navigation__link:nth-child(2) {
-  margin-right: 48px;
 }
 .navigation__link:hover {
   text-decoration: none;
@@ -70,13 +74,19 @@ body {
   width: 100%;
   margin: 12px auto 0;
 }
-.navigation__link__icon {
-  width: 30px;
-  height: 30px;
+[class*="navigation__link__icon"] {
   fill: #ffffff;
   stroke: #ffffff;
 }
-.navigation__link__icon:hover {
+.navigation__link__icon_1 {
+  width: 30px;
+  height: 30px;
+}
+.navigation__link__icon_2 {
+  width: 40px;
+  height: 40px;
+}
+[class*="navigation__link__icon"]:hover {
   stroke: var(--hover-color);
   fill: var(--hover-color);
 }
