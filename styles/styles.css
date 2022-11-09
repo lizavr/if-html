@@ -37,9 +37,7 @@ body {
   display: flex;
   align-items: center;
 }
-/*.burger-menu {*/
-/*  display: none;*/
-/*}*/
+
 .navigation__link {
   margin-right: 20px;
   text-decoration: none;
@@ -357,6 +355,9 @@ body {
   .navigation__block-one {
     display: none;
   }
+  .navigation__link:last-child {
+    margin: 15px;
+  }
   .burger__menu {
     position: relative;
     width: 40px;
@@ -419,6 +420,43 @@ body {
   .container__mobile {
     padding-top: 24px;
   }
+
+  .header__inner {
+    padding: 12px 0;
+  }
+  .header__inner__logo {
+    height: 24px;
+    width: 120px;
+  }
+  .navigation__link {
+    margin-right: 10px;
+  }
+  .navigation__link:last-child {
+    margin: 0;
+  }
+  .navigation__link__icon_1 {
+    width: 16px;
+    height: 16px;
+  }
+  .navigation__link__icon_2 {
+    width: 24px;
+    height: 24px;
+  }
+  .burger__menu {
+    width: 24px;
+    height: 16px;
+    display: flex;
+    margin-right: 0;
+  }
+  .burger__menu:before,
+  .burger__menu:after {
+    content: "";
+    height: 2px;
+  }
+  .burger__menu__center {
+    height: 2px;
+  }
+
   .offer__advantages {
     margin-top: 0;
   }
