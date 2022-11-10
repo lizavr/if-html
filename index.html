@@ -56,7 +56,8 @@
               Discover stays<br />
               to live, work or just relax
             </h1>
-            <form action="#" method="post" class="top-block__forms">
+
+            <form action="#" method="post" class="top-block__forms lg-10-col">
               <div class="top-block__form--city">
                 <label for="city" class="form__label-text"
                   >Your destination or hotel name</label
@@ -68,27 +69,49 @@
                   placeholder="New York"
                 />
               </div>
-              <div class="top-block__form--date">
-                <label for="date" class="form__label-text"
-                  >Check-in — Check-out</label
+
+              <div class="top-block__form__date-in">
+                <label for="datein" class="form__label-text"
+                  >Check-in &ndash;</label
                 >
                 <input
-                  class="form__input form__date--border"
-                  id="date"
+                  class="form__input form__date--border-first"
+                  id="datein"
                   type="text"
-                  placeholder="Tue 15 Sept — Sat 19 Sept"
+                  placeholder="Tue 15 Sept"
                 />
               </div>
-              <div class="top-block__form--people">
+              <div class="dash">&ndash;</div>
+              <div class="top-block__form__date-out">
+                <label for="dateout" class="form__label-text">Check-out</label>
                 <input
-                  class="form__input"
+                  class="form__input form__date--border-second"
+                  id="dateout"
                   type="text"
-                  placeholder="2 Adults — 0 Children — 1 Room"
+                  placeholder="Sat 19 Sept"
                 />
               </div>
+
+              <div class="top-block__form--people1 ">
+                <input class="form__input" type="text" placeholder="2 Adults" />
+              </div>
+              <div class="dash">&ndash;</div>
+              <div class="top-block__form--people2">
+                <input
+                  class="form__input form__input-center"
+                  type="text"
+                  placeholder="0 Children"
+                />
+              </div>
+              <div class="dash">&ndash;</div>
+              <div class="top-block__form--people3">
+                <input class="form__input" type="text" placeholder="1 Room" />
+              </div>
+
               <button type="submit" class="top-block__form__button">
                 Search
               </button>
+              <div class="border  "></div>
             </form>
             <div class="top-block__apps">
               <img
@@ -100,6 +123,7 @@
                 <use href="./img/icons/sprite.svg#app" />
               </svg>
             </div>
+
           </div>
         </div>
       </section>
