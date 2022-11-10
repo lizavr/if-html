@@ -102,7 +102,7 @@ body {
 .top-block {
   height: 100vh;
   width: 100%;
-  background-image: url("../img/city.jpg");
+  /*background-image: url("../img/city.jpg");*/
   background-repeat: no-repeat;
   background-position: 0 5%;
   background-size: cover;
@@ -136,7 +136,7 @@ body {
   grid-template-rows: auto;
 }
 .lg-10-col {
-  grid-template-columns: 38% 10% 1% 10% 8% 1% 7% 1% 8% 15%;
+  grid-template-columns: minmax(20%, 38%) 10% 1% 10% 8% 1% 7% 1% 8% 15%;
   grid-template-rows: auto;
 }
 .form__city-label {
@@ -379,6 +379,108 @@ body {
   font-size: 14px;
   margin-top: 60px;
 }
+@media (max-width: 1200px) {
+  .md-6-col {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+  }
+  .form__city-label {
+    grid-column: 1 / span 6;
+    grid-row: 1/2;
+  }
+  .form__city-input {
+    grid-column: 1 / span 6;
+    grid-row: 1/2;
+  }
+  .form__date-in-label {
+    grid-column: 1 / span 3;
+    grid-row: 2/3;
+  }
+  .form__date-out-label {
+    grid-column: 4 / span 6;
+    grid-row: 2/3;
+  }
+  [class*="dash"] {
+    display: none;
+  }
+  .form__date {
+    grid-column: 1 / span 6;
+    grid-row: 3/4;
+    display: grid;
+  }
+  .date-in-input {
+    grid-column: 1 / 4;
+    grid-row: 1/2;
+  }
+  .date-out-input {
+    grid-column: 4 / 7;
+    grid-row: 1/2;
+  }
+
+  .form__people {
+    grid-column: 1 / span 6;
+    grid-row: 4/5;
+    display: grid;
+  }
+  .adults {
+    grid-column: 1 / span 2;
+    grid-row: 1/2;
+  }
+  .children {
+    grid-column: 3 / span 4;
+    grid-row: 1/2;
+  }
+  .room {
+    grid-column: 5 / span 6;
+    grid-row: 1/2;
+  }
+  .top-block__form__button {
+    grid-column: 1 / span 6;
+    grid-row: 5/6;
+  }
+  .top-block__title {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .top-block__forms {
+    gap: 0;
+    align-content: space-evenly;
+    height: 100%;
+    background: none;
+  }
+  .top-block__form__button {
+    width: 100%;
+  }
+  .form__input {
+    border: 8px solid var(--hover-color);
+    border-radius: 0;
+  }
+  .border-mobile{
+    color:#ffffff;
+  }
+
+  .form__label-text {
+    align-items: center;
+  }
+  .form__date-out-label,
+  .form__date-in-label {
+    position: relative;
+  }
+  .mobile__position {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .top-block__form__button {
+    border: 8px solid var(--hover-color);
+
+  }
+  .form__date--border {
+    outline: 0;
+
+  }
+}
+
 /*for tablets*/
 @media (max-width: 768px) {
   /*for tablets*/
