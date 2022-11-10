@@ -121,76 +121,33 @@ body {
 .top-block__forms {
   display: grid;
   row-gap: 25px;
-  max-width: 1267px;
-  margin: 0 auto;
   align-content: end;
   background-color: #fff;
   height: 68px;
   border-radius: 8px;
   align-items: end;
 }
-.dash {
-  align-self: end;
-  height: 40%;
-}
-
-.lg-1-col {
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-}
-.lg-2-col {
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-}
 .lg-3-col {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-}
-.lg-4-col {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 120px 18px 120px;
   grid-template-rows: auto;
 }
 .lg-5-col {
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: auto;
-}
-.lg-6-col {
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: auto;
-}
-.lg-7-col {
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: auto;
-}
-.lg-8-col {
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: auto;
-}
-.lg-9-col {
-  grid-template-columns: repeat(9, 1fr);
+  grid-template-columns: 100px 18px 85px 18px 96px;
   grid-template-rows: auto;
 }
 .lg-10-col {
   grid-template-columns: 38% 10% 1% 10% 8% 1% 7% 1% 8% 15%;
   grid-template-rows: auto;
 }
-.lg-11-col {
-  grid-template-columns: repeat(11, 1fr);
-  grid-template-rows: auto;
-}
-.lg-12-col {
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
-}
-.top-block__form--city-label {
+.form__city-label {
   grid-column: 1/2;
   grid-row: 1/2;
 }
-.top-block__form--city-input {
+.form__city-input {
   grid-column: 1/2;
   grid-row: 2/3;
 }
-.date-in-label {
+.form__date-in-label {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
 }
@@ -198,11 +155,11 @@ body {
   grid-column: 3/ 4;
   grid-row: 1 / 2;
 }
-.date-out-label {
+.form__date-out-label {
   grid-column: 4/ 5;
   grid-row: 1 / 2;
 }
-.top-block__form__date {
+.form__date {
   grid-column: 2 / 5;
   grid-row: 2 / 3;
   display: grid;
@@ -211,18 +168,19 @@ body {
   grid-column: 1/2;
   grid-row: 1/1;
 }
+.date-dash {
+  color: #ffffff;
+}
 .dash-date {
   grid-column: 2/3;
   grid-row: 1/1;
   text-align: center;
-  margin-top: 50%;
 }
 .date-out-input {
   grid-column: 3/4;
   grid-row: 1/1;
 }
-
-.top-block__form__people {
+.form__people {
   display: grid;
   grid-column: 5/10;
   grid-row: 2/3;
@@ -251,41 +209,30 @@ body {
   grid-column: 10/11;
   grid-row: 2/3;
 }
-
-
-
-
-
 .form__label-text {
-  width: max-content;
   color: #ffffff;
   font-size: 18px;
-  line-height: 21px;
-  margin-bottom: 24px;
   padding-left: 24px;
 }
 .form__input {
-
   padding: 23px 0 23px 24px;
   font-size: 18px;
-  line-height: 21px;
   width: 100%;
   border-radius: 8px;
 }
-
-[class*="form__date--border"] {
-  border: 1px solid #cecece;
+[class*="dash-"] {
+  align-self: center;
+}
+.form__date--border {
+  outline: 1px solid #cecece;
+  outline-offset: -1px;
   border-radius: 8px;
 }
-.form__date--border-first {
-  border-right-color: #ffffff;
-}
-.form__date--border-second {
-  border-left-color: #ffffff;
-}
-
 .form__input-center {
   padding-left: 2px;
+}
+.form__input-last {
+  padding-left: 10px;
 }
 .top-block__form__button {
   background-color: #3077c6;
@@ -298,12 +245,10 @@ body {
   text-align: center;
   color: #ffffff;
 }
-
-
-
-.border:hover {
+.border-hover:hover {
   outline: 3px solid var(--hover-color);
   outline-offset: -3px;
+  border-radius: 8px;
 }
 .top-block__apps {
   margin: 120px auto;
@@ -311,7 +256,6 @@ body {
   justify-content: center;
   gap: 16px;
 }
-
 .top-block__app-store {
   width: 120px;
   height: 40px;

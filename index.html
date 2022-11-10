@@ -57,12 +57,12 @@
               to live, work or just relax
             </h1>
             <form action="#" method="post" class="top-block__forms lg-10-col">
-              <div class="top-block__form--city-label">
+              <div class="form__city-label">
                 <label for="city" class="form__label-text"
                   >Your destination or hotel name</label
                 >
               </div>
-              <div class="top-block__form--city-input border">
+              <div class="form__city-input border-hover">
                 <input
                   class="form__input"
                   id="city"
@@ -70,20 +70,17 @@
                   placeholder="New York"
                 />
               </div>
-
-              <div class="date-in-label">
+              <div class="form__date-in-label">
                 <label for="datein" class="form__label-text">Check-in</label>
               </div>
               <div class="date-dash">&ndash;</div>
-
-              <div class="date-out-label">
+              <div class="form__date-out-label">
                 <label for="dateout" class="form__label-text"> Check-out</label>
               </div>
-
-              <div class="top-block__form__date border lg-3-col">
+              <div class="form__date form__date--border border-hover lg-3-col">
                 <div class="date-in-input">
                   <input
-                    class="form__input form__date--border-first"
+                    class="form__input"
                     id="datein"
                     type="text"
                     placeholder="Tue 15 Sept"
@@ -92,15 +89,14 @@
                 <div class="dash-date">&ndash;</div>
                 <div class="date-out-input">
                   <input
-                    class="form__input form__date--border-second"
+                    class="form__input form__input-last"
                     id="dateout"
                     type="text"
                     placeholder="Sat 19 Sept"
                   />
                 </div>
               </div>
-
-              <div class="top-block__form__people border lg-5-col">
+              <div class="form__people border-hover lg-5-col">
                 <div class="adults">
                   <input
                     class="form__input"
@@ -109,7 +105,6 @@
                   />
                 </div>
                 <div class="dash-adults">&ndash;</div>
-
                 <div class="children">
                   <input
                     class="form__input form__input-center"
@@ -119,7 +114,11 @@
                 </div>
                 <div class="dash-children">&ndash;</div>
                 <div class="room">
-                  <input class="form__input" type="text" placeholder="1 Room" />
+                  <input
+                    class="form__input form__input-last"
+                    type="text"
+                    placeholder="1 Room"
+                  />
                 </div>
               </div>
               <button type="submit" class="top-block__form__button">
@@ -127,8 +126,6 @@
               </button>
               <div class="border"></div>
             </form>
-
-
             <div class="top-block__apps">
               <img
                 class="top-block__app-google"
