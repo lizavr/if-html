@@ -102,7 +102,7 @@ body {
 .top-block {
   height: 100vh;
   width: 100%;
-  /*background-image: url("../img/city.jpg");*/
+  background-image: url("../img/city.jpg");
   background-repeat: no-repeat;
   background-position: 0 5%;
   background-size: cover;
@@ -150,10 +150,10 @@ body {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
 }
-.date-dash {
-  grid-column: 3/ 4;
-  grid-row: 1 / 2;
-}
+/*.label-dash {*/
+/*  grid-column: 3/ 4;*/
+/*  grid-row: 1 / 2;*/
+/*}*/
 .form__date-out-label {
   grid-column: 4/ 5;
   grid-row: 1 / 2;
@@ -167,36 +167,36 @@ body {
   grid-column: 1/2;
   grid-row: 1/1;
 }
-.dash-date {
-  grid-column: 2/3;
-  grid-row: 1/1;
-  text-align: center;
-}
+/*.dash-date {*/
+/*  grid-column: 2/3;*/
+/*  grid-row: 1/1;*/
+/*  text-align: center;*/
+/*}*/
 .date-out-input {
   grid-column: 3/4;
   grid-row: 1/1;
 }
 .form__people {
-  display: grid;
   grid-column: 5/10;
   grid-row: 2/3;
+  display: grid;
 }
 .adults {
   grid-column: 1/2;
   grid-row: 1/1;
 }
-.dash-adults {
-  grid-column: 2/3;
-  grid-row: 1/1;
-}
+/*.dash-adults {*/
+/*  grid-column: 2/3;*/
+/*  grid-row: 1/1;*/
+/*}*/
 .children {
   grid-column: 3/4;
   grid-row: 1/1;
 }
-.dash-children {
-  grid-column: 4/5;
-  grid-row: 1/1;
-}
+/*.dash-children {*/
+/*  grid-column: 4/5;*/
+/*  grid-row: 1/1;*/
+/*}*/
 .room {
   grid-column: 5/6;
   grid-row: 1/1;
@@ -205,10 +205,10 @@ body {
   grid-column: 10/11;
   grid-row: 2/3;
 }
-.date-dash {
+.label-dash {
   color: #ffffff;
 }
-.form__label-text {
+.form__label {
   color: #ffffff;
   font-size: 18px;
   padding-left: 24px;
@@ -219,8 +219,7 @@ body {
   width: 100%;
   border-radius: 8px;
 }
-
-[class*="dash-"] {
+.dash-input {
   align-self: center;
 }
 
@@ -229,7 +228,7 @@ body {
   outline-offset: -1px;
   border-radius: 8px;
 }
-.form__input-center {
+.children__position {
   padding-left: 2px;
 }
 .form__input-last {
@@ -275,7 +274,6 @@ body {
 }
 .border-hover:hover {
   outline: 3px solid var(--hover-color);
-  outline-offset: -3px;
   border-radius: 8px;
 }
 .top-block__apps {
@@ -466,13 +464,13 @@ body {
   .children-label {
     position: relative;
   }
-  .div {
+  .people__label {
     background-color: #fff;
   }
   .people-position {
     padding-left: 0;
   }
-  .form__input-center {
+  .children__position{
     padding-left: 20px;
   }
   .children {
@@ -491,16 +489,16 @@ body {
   .room-label {
     position: relative;
   }
-  .form__input-last{
-    padding-left: 20px ;
+  .form__input-last {
+    padding-left: 20px;
   }
   .top-block__form__button {
     grid-column: 1 / span 6;
     grid-row: 5/6;
     border-radius: 0;
   }
-  .children-inner {
-    border-left: 2px solid #bfbfbf;
+  .children-border {
+    border-left: 4px solid #bfbfbf;
   }
   .top-block__title {
     margin-top: 100px;
@@ -512,7 +510,7 @@ body {
     background: none;
     position: relative;
   }
-  .city-input::placeholder {
+  .city__input-mobile::placeholder {
     color: white;
   }
   .border-hover:hover {
@@ -531,18 +529,16 @@ body {
     left: 0;
     width: 100%;
   }
-  .form__label-text {
+  .form__label {
     color: #383838;
     height: 8px;
-  }
-  .form__label-text {
     align-items: center;
   }
   .form__date-out-label,
   .form__date-in-label {
     position: relative;
   }
-  .mobile__position {
+  .form__label-mobile {
     position: absolute;
     top: 8px;
     left: 0;
@@ -750,12 +746,10 @@ body {
     margin: 35px 0 30px;
     width: 100%;
   }
-  .form__label-text {
+  .form__label {
     font-size: 15px;
   }
-  .form__input {
-    font-size: 15px;
-  }
+
   .top-block__form__button {
     padding-top: 14px;
     padding-bottom: 14px;
