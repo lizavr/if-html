@@ -102,7 +102,7 @@ body {
 .top-block {
   height: 100vh;
   width: 100%;
-  /*background-image: url("../img/city.jpg");*/
+  background-image: url("../img/city.jpg");
   background-repeat: no-repeat;
   background-position: 0 5%;
   background-size: cover;
@@ -125,7 +125,6 @@ body {
   background-color: #fff;
   height: 68px;
   border-radius: 8px;
-  align-items: end;
 }
 .lg-3-col {
   grid-template-columns: 120px 18px 120px;
@@ -168,9 +167,6 @@ body {
   grid-column: 1/2;
   grid-row: 1/1;
 }
-.date-dash {
-  color: #ffffff;
-}
 .dash-date {
   grid-column: 2/3;
   grid-row: 1/1;
@@ -208,6 +204,9 @@ body {
 .top-block__form__button {
   grid-column: 10/11;
   grid-row: 2/3;
+}
+.date-dash {
+  color: #ffffff;
 }
 .form__label-text {
   color: #ffffff;
@@ -444,11 +443,15 @@ body {
   }
   .top-block__forms {
     gap: 0;
-    align-content: space-evenly;
     height: 100%;
     background: none;
-    padding: 0;
     position: relative;
+  }
+  .city-input::placeholder {
+    color: white;
+  }
+  .border-hover:hover {
+    outline: 0;
   }
   .top-block__form__button {
     width: 100%;
@@ -463,13 +466,6 @@ body {
     left: 0;
     width: 100%;
   }
-  .input__city-mobile {
-  }
-  .people-border-mobile{
-
-
-  }
-
   .form__label-text {
     color: #383838;
     height: 8px;
@@ -483,12 +479,9 @@ body {
   }
   .mobile__position {
     position: absolute;
-    top: 8px;
+    top: 0;
     left: 0;
   }
-  /*.top-block__form__button {*/
-  /*  border: 4px solid var(--hover-color);*/
-  /*}*/
   .form__date--border {
     outline: 0;
   }
@@ -643,7 +636,6 @@ body {
   .container__mobile {
     padding-top: 24px;
   }
-
   .navigation__link__icon_1 {
     width: 16px;
     height: 16px;
