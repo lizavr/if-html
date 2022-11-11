@@ -59,7 +59,7 @@
             <form
               action="#"
               method="post"
-              class="top-block__forms form__input-border lg-10-col md-6-col"
+              class="top-block__forms lg-10-col md-6-col border__grid"
             >
               <div class="form__city-label">
                 <label for="city" class="form__label-text"
@@ -68,7 +68,7 @@
               </div>
               <div class="form__city-input border-hover">
                 <input
-                  class="form__input city-input form__input-border"
+                  class="form__input city-input md-6-col border__grid"
                   id="city"
                   type="text"
                   placeholder="New York"
@@ -90,7 +90,7 @@
               >
                 <div class="date-in-input">
                   <input
-                    class="form__input form__input-border"
+                    class="form__input form__input-date border__grid"
                     id="datein"
                     type="text"
                     placeholder="Tue 15 Sept"
@@ -99,19 +99,17 @@
                 <div class="dash-date">&ndash;</div>
                 <div class="date-out-input">
                   <input
-                    class="form__input form__input-border form__input-last"
+                    class="form__input form__input-date border__grid form__input-last"
                     id="dateout"
                     type="text"
                     placeholder="Sat 19 Sept"
                   />
                 </div>
               </div>
-              <div
-                class="form__people people-border-mobile form__input-border form__input-border-people border-hover lg-5-col md-6-col"
-              >
+              <div class="form__people border-hover border__grid lg-5-col md-6-col">
                 <div class="adults">
                   <input
-                    class="form__input border-people"
+                    class="form__input "
                     type="text"
                     placeholder="2 Adults"
                   />
@@ -119,7 +117,7 @@
                 <div class="dash-adults">&ndash;</div>
                 <div class="children">
                   <input
-                    class="form__input border-people form__input-center"
+                    class="form__input form__input-center children-inner"
                     type="text"
                     placeholder="0 Children"
                   />
@@ -127,19 +125,16 @@
                 <div class="dash-children">&ndash;</div>
                 <div class="room">
                   <input
-                    class="form__input border-people form__input-last"
+                    class="form__input children-inner form__input-last"
                     type="text"
                     placeholder="1 Room"
                   />
                 </div>
               </div>
-              <button
-                type="submit"
-                class="top-block__form__button form__input-border"
-              >
+              <button type="submit" class="top-block__form__button border__grid">
                 Search
               </button>
-              <div class="border"></div>
+
             </form>
             <div class="top-block__apps">
               <img
