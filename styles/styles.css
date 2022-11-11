@@ -385,7 +385,7 @@ body {
 
     border-radius: 0;
   }
-  .border__grid{
+  .border__grid {
     border: 4px solid var(--hover-color);
   }
   .form__city-label {
@@ -427,13 +427,14 @@ body {
     grid-column: 1 / span 6;
     grid-row: 4/5;
     display: grid;
+    /*border: 5px solid #ffffff;*/
     /*outline: 8px solid var(--hover-color);*/
     /*outline-offset: -8px;*/
   }
   .adults {
     grid-column: 1 / span 2;
     grid-row: 1/2;
-    /*outline: 15px solid #ffffff;*/
+
     /*outline-offset: -15px;*/
   }
   .children {
@@ -491,6 +492,7 @@ body {
   .form__label-text {
     align-items: center;
   }
+
   .form__date-out-label,
   .form__date-in-label {
     position: relative;
@@ -500,7 +502,7 @@ body {
     top: 8px;
     left: 0;
   }
-  .form__input-date{
+  .form__input-date {
     padding-top: 30px;
   }
   .form__date--border {
