@@ -219,9 +219,11 @@ body {
   width: 100%;
   border-radius: 8px;
 }
+
 [class*="dash-"] {
   align-self: center;
 }
+
 .form__date--border {
   outline: 1px solid #cecece;
   outline-offset: -1px;
@@ -232,6 +234,33 @@ body {
 }
 .form__input-last {
   padding-left: 10px;
+}
+.adults {
+  position: relative;
+}
+.people-label {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 0;
+}
+.children {
+  position: relative;
+}
+.children-label {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 0;
+}
+.room {
+  position: relative;
+}
+.room-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
 }
 .top-block__form__button {
   background-color: #3077c6;

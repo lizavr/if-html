@@ -106,35 +106,45 @@
                   />
                 </div>
               </div>
-              <div class="form__people border-hover border__grid lg-5-col md-6-col">
+              <div
+                class="form__people border-hover border__grid lg-5-col md-6-col"
+              >
                 <div class="adults">
+                  <label for="adults" class=" people-label form__input ">Adults</label>
                   <input
-                    class="form__input border-people "
+                    id="adults"
+                    class="form__input border-people adults-position"
                     type="text"
-                    placeholder="2 Adults"
+                    placeholder="2"
                   />
                 </div>
                 <div class="dash-adults">&ndash;</div>
                 <div class="children">
+                  <label for="children" class="children-label form__input ">Children</label>
                   <input
+                    id="children"
                     class="form__input form__input-center children-inner"
                     type="text"
-                    placeholder="0 Children"
+                    placeholder="0"
                   />
                 </div>
                 <div class="dash-children">&ndash;</div>
                 <div class="room">
+                  <label for="room" class=" room-label form__input ">Room</label>
                   <input
+                    id="room"
                     class="form__input children-inner form__input-last"
                     type="text"
-                    placeholder="1 Room"
+                    placeholder="0"
                   />
                 </div>
               </div>
-              <button type="submit" class="top-block__form__button border__grid">
+              <button
+                type="submit"
+                class="top-block__form__button border__grid"
+              >
                 Search
               </button>
-
             </form>
             <div class="top-block__apps">
               <img
