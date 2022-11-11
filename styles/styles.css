@@ -37,7 +37,6 @@ body {
   display: flex;
   align-items: center;
 }
-
 .navigation__link {
   margin-right: 20px;
   text-decoration: none;
@@ -150,10 +149,6 @@ body {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
 }
-/*.label-dash {*/
-/*  grid-column: 3/ 4;*/
-/*  grid-row: 1 / 2;*/
-/*}*/
 .form__date-out-label {
   grid-column: 4/ 5;
   grid-row: 1 / 2;
@@ -167,11 +162,6 @@ body {
   grid-column: 1/2;
   grid-row: 1/1;
 }
-/*.dash-date {*/
-/*  grid-column: 2/3;*/
-/*  grid-row: 1/1;*/
-/*  text-align: center;*/
-/*}*/
 .date-out-input {
   grid-column: 3/4;
   grid-row: 1/1;
@@ -185,18 +175,10 @@ body {
   grid-column: 1/2;
   grid-row: 1/1;
 }
-/*.dash-adults {*/
-/*  grid-column: 2/3;*/
-/*  grid-row: 1/1;*/
-/*}*/
 .children {
   grid-column: 3/4;
   grid-row: 1/1;
 }
-/*.dash-children {*/
-/*  grid-column: 4/5;*/
-/*  grid-row: 1/1;*/
-/*}*/
 .room {
   grid-column: 5/6;
   grid-row: 1/1;
@@ -222,17 +204,10 @@ body {
 .dash-input {
   align-self: center;
 }
-
 .form__date--border {
   outline: 1px solid #cecece;
   outline-offset: -1px;
   border-radius: 8px;
-}
-.children__position {
-  padding-left: 2px;
-}
-.form__input-last {
-  padding-left: 10px;
 }
 .adults {
   position: relative;
@@ -252,6 +227,9 @@ body {
   left: 0;
   width: 0;
 }
+.children__position {
+  padding-left: 2px;
+}
 .room {
   position: relative;
 }
@@ -260,6 +238,9 @@ body {
   top: 0;
   left: 0;
   width: 0;
+}
+.form__input-last {
+  padding-left: 10px;
 }
 .top-block__form__button {
   background-color: #3077c6;
@@ -406,13 +387,13 @@ body {
   margin-top: 60px;
 }
 @media (max-width: 1200px) {
+  [class*="dash"] {
+    display: none;
+  }
   .md-6-col {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
     border-radius: 0;
-  }
-  .border__grid {
-    border: 4px solid var(--hover-color);
   }
   .form__city-label {
     grid-column: 1 / span 6;
@@ -429,9 +410,6 @@ body {
   .form__date-out-label {
     grid-column: 4 / span 6;
     grid-row: 2/3;
-  }
-  [class*="dash"] {
-    display: none;
   }
   .form__date {
     grid-column: 1 / span 6;
@@ -457,71 +435,39 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .adults-label {
-    position: relative;
-    padding: 0;
-  }
-  .children-label {
-    position: relative;
-  }
-  .people__label {
-    background-color: #fff;
-  }
-  .people-position {
-    padding-left: 0;
-  }
-  .children__position{
-    padding-left: 20px;
-  }
   .children {
     grid-column: 3 / span 4;
     grid-row: 1/2;
     display: flex;
     flex-direction: column;
   }
-
   .room {
     grid-column: 5 / span 6;
     grid-row: 1/2;
     display: flex;
     flex-direction: column;
   }
-  .room-label {
-    position: relative;
-  }
-  .form__input-last {
-    padding-left: 20px;
-  }
   .top-block__form__button {
     grid-column: 1 / span 6;
     grid-row: 5/6;
     border-radius: 0;
   }
-  .children-border {
-    border-left: 4px solid #bfbfbf;
+  .border__grid {
+    border: 4px solid var(--hover-color);
+  }
+  .border-hover:hover {
+    outline: 0;
   }
   .top-block__title {
     margin-top: 100px;
     margin-bottom: 100px;
   }
+
   .top-block__forms {
     gap: 0;
     height: 100%;
     background: none;
     position: relative;
-  }
-  .city__input-mobile::placeholder {
-    color: white;
-  }
-  .border-hover:hover {
-    outline: 0;
-  }
-  .top-block__form__button {
-    width: 100%;
-  }
-  .form__input {
-    border-radius: 0;
-    padding-bottom: 5px;
   }
   .form__city-label {
     position: absolute;
@@ -529,10 +475,23 @@ body {
     left: 0;
     width: 100%;
   }
+  .city__input-mobile::placeholder {
+    color: white;
+  }
   .form__label {
     color: #383838;
     height: 8px;
     align-items: center;
+  }
+  .form__input {
+    border-radius: 0;
+    padding-bottom: 5px;
+  }
+  .form__date--border {
+    outline: 0;
+  }
+  .form__input-date {
+    padding-top: 30px;
   }
   .form__date-out-label,
   .form__date-in-label {
@@ -543,17 +502,35 @@ body {
     top: 8px;
     left: 0;
   }
-  .form__input-date {
-    padding-top: 30px;
-  }
   .form__input-people {
     padding-top: 10px;
   }
-  .form__date--border {
-    outline: 0;
+  .people__label {
+    background-color: #fff;
+  }
+  .adults-label {
+    position: relative;
+    padding: 0;
+  }
+  .children-label {
+    position: relative;
+  }
+  .children__position {
+    padding-left: 20px;
+  }
+  .room-label {
+    position: relative;
+  }
+  .form__input-last {
+    padding-left: 20px;
+  }
+  .children-border {
+    border-left: 4px solid #bfbfbf;
+  }
+  .top-block__form__button {
+    width: 100%;
   }
 }
-
 @media (max-width: 768px) {
   /*for tablets*/
   .container {
@@ -656,7 +633,6 @@ body {
     margin: 100px 0 90px;
     width: 100%;
   }
-
   .footer__logo-mobile {
     display: block;
     width: 98px;
@@ -737,19 +713,19 @@ body {
   .top-block__filter {
     height: auto;
   }
-  .form__input {
-    padding: 20px 0;
-    font-size: 15px;
-  }
+
   .top-block__title {
     font-size: 30px;
     margin: 35px 0 30px;
     width: 100%;
   }
+  .form__input {
+    padding: 20px 0;
+    font-size: 15px;
+  }
   .form__label {
     font-size: 15px;
   }
-
   .top-block__form__button {
     padding-top: 14px;
     padding-bottom: 14px;
