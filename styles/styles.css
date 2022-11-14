@@ -101,7 +101,7 @@ body {
 .top-block {
   height: 100vh;
   width: 100%;
-  background-image: url("../img/city.jpg");
+  /*background-image: url("../img/city.jpg");*/
   background-repeat: no-repeat;
   background-position: 0 5%;
   background-size: cover;
@@ -200,6 +200,12 @@ body {
   font-size: 18px;
   width: 100%;
   border-radius: 8px;
+}
+.form__city-label {
+  padding-left: 10px;
+}
+.search {
+  display: none;
 }
 .dash-input {
   align-self: center;
@@ -469,11 +475,23 @@ body {
     background: none;
     position: relative;
   }
+  .search {
+    display: block;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 25px;
+    left: 24px;
+  }
   .form__city-label {
     position: absolute;
+
     top: 20px;
-    left: 0;
+    left: 10px;
     width: 100%;
+  }
+  .city__input-mobile {
+    padding-left: 43px;
   }
   .form__city-input:has(.form__input:focus) + .form__city-label,
   .form__city-input:has(.form__input:not(:placeholder-shown))+ .form__city-label {
@@ -724,8 +742,10 @@ body {
     width: 100%;
   }
   .form__input {
-    padding: 20px 0;
     font-size: 15px;
+  }
+  .city__input-mobile {
+    padding-left: 43px;
   }
   .form__label {
     font-size: 15px;
