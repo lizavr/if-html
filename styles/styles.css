@@ -75,11 +75,11 @@ body {
   fill: #ffffff;
   stroke: #ffffff;
 }
-.navigation__link__icon_1 {
+.navigation__link__icon-night {
   width: 30px;
   height: 30px;
 }
-.navigation__link__icon_2 {
+.navigation__link__icon-acc {
   width: 40px;
   height: 40px;
 }
@@ -595,11 +595,11 @@ body {
   .navigation__link:last-child {
     margin: 15px;
   }
-  .navigation__link__icon_1 {
+  .navigation__link__icon-night {
     width: 25px;
     height: 25px;
   }
-  .navigation__link__icon_2 {
+  .navigation__link__icon-acc {
     width: 30px;
     height: 30px;
   }
@@ -678,11 +678,11 @@ body {
   .container__mobile {
     padding-top: 24px;
   }
-  .navigation__link__icon_1 {
+  .navigation__link__icon-night {
     width: 16px;
     height: 16px;
   }
-  .navigation__link__icon_2 {
+  .navigation__link__icon-acc {
     width: 24px;
     height: 24px;
   }
