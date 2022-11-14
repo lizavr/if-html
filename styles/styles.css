@@ -475,6 +475,10 @@ body {
     left: 0;
     width: 100%;
   }
+  .form__city-input:has(.form__input:focus) + .form__city-label,
+  .form__city-input:has(.form__input:not(:placeholder-shown))+ .form__city-label {
+    top: 0;
+  }
   .city__input-mobile::placeholder {
     color: white;
   }
