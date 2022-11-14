@@ -494,6 +494,7 @@ body {
 
   .border-hover:hover {
     outline: 0;
+    border-radius: 0;
   }
   .top-block__title {
     margin-top: 100px;
