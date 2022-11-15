@@ -277,15 +277,15 @@ body {
 
 /*/////////////////offer/////////////////*/
 .offer {
-  font-family: Roboto, sans-serif;
   font-size: 24px;
   color: #383838;
 }
-.offer__title {
+.title {
   display: block;
   text-align: center;
   font-weight: 500;
   font-size: 40px;
+  margin-bottom: 105px;
 }
 .offer__title:after {
   content: "";
@@ -296,10 +296,74 @@ body {
   margin: 20px auto;
 }
 .offer__advantages {
-  margin-top: 85px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+/*/////////////////////////homes/////////////////*/
+.homes {
+  background-color: #eaf0f9;
+}
+.hotels {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 296px auto;
+  column-gap: 16px;
+  row-gap: 24px;
+}
+.hotel__img-leopold {
+  grid-column: 1 / span 1;
+  grid-row: 1/2;
+}
+.hotel__img-sunshine {
+  grid-column: 2 / span 1;
+  grid-row: 1/2;
+}
+.hotel__img-kunerad {
+  grid-column: 3 / span 1;
+  grid-row: 1/2;
+}
+.hotel__img-friendship {
+  grid-column: 4 / span 1;
+  grid-row: 1/2;
+}
+.hotel__name-leopold {
+  grid-column: 1 / span 1;
+  grid-row: 2/3;
+}
+.hotel__name-sunshine {
+  grid-column: 2 / span 1;
+  grid-row: 2/3;
+}
+.hotel__name-kunerad {
+  grid-column: 3 / span 1;
+  grid-row: 2/3;
+}
+.hotel__name-friendship {
+  grid-column: 4 / span 1;
+  grid-row: 2/3;
+}
+.hotel__place-leopold {
+  grid-column: 1 / span 1;
+  grid-row: 3/4;
+}
+.hotel__place-sunshine {
+  grid-column: 2 / span 1;
+  grid-row: 3/4;
+}
+.hotel__place-kunerad {
+  grid-column: 3 / span 1;
+  grid-row: 3/4;
+}
+.hotel__place-friendship {
+  grid-column: 4 / span 1;
+  grid-row: 3/4;
+}
+.hotel__name {
+  color: #3077c6;
+}
+.hotel__place {
+  color: #bfbfbf;
 }
 
 /*for desktop*/
@@ -534,7 +598,7 @@ body {
   }
 
   .city__input-mobile::placeholder {
-   opacity: 0;
+    opacity: 0;
   }
 
   .form__label {
