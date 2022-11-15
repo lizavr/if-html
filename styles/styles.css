@@ -2,6 +2,7 @@
 :root {
   --hover-color: #f5bd41;
   --width-col: calc(100% / 12);
+  --width-underline: 50px;
 }
 * {
   margin: 0;
@@ -67,8 +68,8 @@ body {
   display: block;
   height: 4px;
   top: 100%;
-  left: 0;
-  width: 100%;
+  left: calc(50% - var(--width-underline) / 2);
+  width: 50px;
   margin: 12px auto 0;
 }
 [class*="navigation__link__icon"] {
@@ -293,7 +294,6 @@ body {
   width: 100px;
   background-color: var(--hover-color);
   margin: 20px auto;
-  z-index: 3;
 }
 .offer__advantages {
   margin-top: 85px;
