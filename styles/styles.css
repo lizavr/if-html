@@ -534,7 +534,7 @@ body {
   }
 
   .city__input-mobile::placeholder {
-    color: white;
+   opacity: 0;
   }
 
   .form__label {
