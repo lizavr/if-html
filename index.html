@@ -23,61 +23,150 @@
                 <svg class="header__inner__logo">
                   <use href="./img/icons/sprite.svg#logo" />
                 </svg>
-                <div class="header__inner__navigation">
-                  <a href="#" class="navigation__link navigation__link__text"
-                    >Stays</a
-                  >
-                  <a href="#" class="navigation__link navigation__link__text"
-                    >Attractions</a
-                  >
-                  <a href="#" class="navigation__link">
-                    <svg class="navigation__link__icon">
-                      <use href="./img/icons/sprite.svg#night" />
-                    </svg>
-                  </a>
-                  <a href="#" class="navigation__link">
-                    <svg class="navigation__link__icon">
-                      <use href="./img/icons/sprite.svg#acc" />
-                    </svg>
-                  </a>
-                </div>
+                <nav class="header__inner__navigation">
+                  <div id="open" class="navigation__block-one">
+                    <a href="#" class="navigation__link navigation__link__text"
+                      >Stays</a
+                    >
+                    <a href="#" class="navigation__link navigation__link__text"
+                      >Attractions</a
+                    >
+                  </div>
+                  <div class="navigation__block-two">
+                    <a href="#" class="navigation__link">
+                      <svg class="navigation__link__icon-night">
+                        <use href="./img/icons/sprite.svg#night" />
+                      </svg>
+                    </a>
+                    <a href="#" class="navigation__link">
+                      <svg class="navigation__link__icon-acc">
+                        <use href="./img/icons/sprite.svg#acc" />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="burger">
+                    <a href="#open" type="button" class="burger__menu"
+                      ><span class="burger__menu__center"></span
+                    ></a>
+                  </div>
+                </nav>
               </div>
             </header>
             <h1 class="top-block__title">
               Discover stays<br />
               to live, work or just relax
             </h1>
-            <form action="#" method="post" class="top-block__forms">
-              <div class="top-block__form--city">
-                <label for="city" class="form__label-text"
-                  >Your destination or hotel name</label
-                >
+            <form
+              action="#"
+              method="post"
+              class="top-block__forms lg-10-col md-6-col border__grid"
+            >
+              <div class="form__city-input border-hover">
+                <svg class="search">
+                  <use href="./img/icons/sprite.svg#search" />
+                </svg>
                 <input
-                  class="form__input"
+                  class="form__input city__input-mobile border__grid md-6-col"
                   id="city"
                   type="text"
                   placeholder="New York"
                 />
               </div>
-              <div class="top-block__form--date">
-                <label for="date" class="form__label-text"
-                  >Check-in — Check-out</label
+              <div class="form__city-label">
+                <label for="city" class="form__label"
+                  >Your destination or hotel name</label
                 >
-                <input
-                  class="form__input form__date--border"
-                  id="date"
-                  type="text"
-                  placeholder="Tue 15 Sept — Sat 19 Sept"
-                />
               </div>
-              <div class="top-block__form--people">
-                <input
-                  class="form__input"
-                  type="text"
-                  placeholder="2 Adults — 0 Children — 1 Room"
-                />
+              <div class="form__date-in-label">
+                <label for="datein" class="form__label form__label-mobile"
+                  >Check-in</label
+                >
               </div>
-              <button type="submit" class="top-block__form__button">
+              <div class="label-dash">&ndash;</div>
+              <div class="form__date-out-label">
+                <label for="dateout" class="form__label form__label-mobile">
+                  Check-out</label
+                >
+              </div>
+              <div
+                class="form__date form__date--border border-hover lg-3-col md-6-col"
+              >
+                <div class="date-in-input">
+                  <input
+                    class="form__input form__input-date border__grid"
+                    id="datein"
+                    type="text"
+                    placeholder="Tue 15 Sept"
+                  />
+                </div>
+                <div class="dash-input">&ndash;</div>
+                <div class="date-out-input">
+                  <input
+                    class="form__input form__input-date border__grid form__input-last"
+                    id="dateout"
+                    type="text"
+                    placeholder="Sat 19 Sept"
+                  />
+                </div>
+              </div>
+
+              <div
+                class="form__people border-hover border__grid lg-5-col md-6-col-people"
+              >
+                <div class="adults">
+                  <div class="people__label">
+                    <label for="adults" class="adults-label form__input"
+                      >Adults</label
+                    >
+                  </div>
+                  <div class="people__input">
+                    <input
+                      id="adults"
+                      class="form__input form__input-people"
+                      type="text"
+                      placeholder="2"
+                    />
+                  </div>
+                </div>
+                <div class="dash-input">&ndash;</div>
+                <div class="children children-border">
+                  <div class="people__label">
+                    <label for="children" class="children-label form__input"
+                      >Children</label
+                    >
+                  </div>
+                  <div class="people__input">
+                    <input
+                      id="children"
+                      class="form__input form__input-people children__position"
+                      type="text"
+                      placeholder="0"
+                    />
+                  </div>
+                </div>
+                <div class="dash-input">&ndash;</div>
+                <div class="room">
+                  <div class="people__label">
+                    <label for="room" class="form__input room-label"
+                      >Room</label
+                    >
+                  </div>
+                  <div class="people__input">
+                    <input
+                      id="room"
+                      class="form__input form__input-people form__input-last"
+                      type="text"
+                      placeholder="0"
+                    />
+                  </div>
+                </div>
+                <div class="people__border-top"></div>
+                <div class="people__border-bottom"></div>
+              </div>
+              <button
+                type="submit"
+                class="top-block__form__button border__grid"
+              >
                 Search
               </button>
             </form>
