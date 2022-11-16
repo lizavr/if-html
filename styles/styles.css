@@ -319,8 +319,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.hotels:before {
-  content: "";
+.circle {
   background-color: #f3f3f4;
   height: 40px;
   width: 40px;
@@ -331,7 +330,7 @@ body {
   right: -20px;
   z-index: 2;
 }
-.hotels:after {
+.arrow {
   content: "";
   border: 2px solid #383838;
   border-radius: 2px;
@@ -444,16 +443,16 @@ body {
   margin-top: 60px;
 }
 @media (max-width: 1300px) {
-  .hotel__card:last-child {
+  .hotel__card:nth-child(4) {
     display: none;
   }
   .hotel__card {
     width: 33%;
   }
-  .hotels:before {
+  .circle {
     top: calc(((100vw - (4 * 16px)) / 3) / 2 - 20px);
   }
-  .hotels:after {
+  .arrow {
     top: calc(((100vw - (4 * 16px)) / 3) / 2 - 8px);
   }
 }
@@ -566,7 +565,6 @@ body {
   }
   .form__city-label {
     position: absolute;
-
     top: 20px;
     left: 10px;
     width: 100%;
@@ -648,10 +646,10 @@ body {
   .hotel__card {
     width: 50%;
   }
-  .hotels:before {
+  .circle {
     top: calc(((100vw - (3 * 16px)) / 2) / 2 - 20px);
   }
-  .hotels:after {
+  .arrow {
     top: calc(((100vw - (3 * 16px)) / 2) / 2 - 8px);
   }
 }
@@ -898,17 +896,17 @@ body {
   .hotels {
     padding: 0;
   }
-  .hotels:before {
-    top: calc((155px / 2)  - 20px);
+  .circle {
+    top: calc((155px / 2) - 20px);
   }
-  .hotels:after {
-    top: calc((155px / 2)  - 10px);
+  .arrow{
+    top: calc((155px / 2) - 10px);
   }
-  .hotels:before {
+  .circle {
     height: 28px;
     width: 28px;
   }
-  .hotels:after {
+  .arrow {
     height: 8px;
     width: 8px;
   }
