@@ -43,6 +43,7 @@ body {
   text-decoration: none;
   color: #ffffff;
   position: relative;
+
 }
 .navigation__block-one {
   margin-right: 48px;
@@ -63,6 +64,7 @@ body {
 .navigation__link:hover:after {
   opacity: 1;
   display: block;
+  transition: opacity ease 300ms 100ms;
 }
 .navigation__link__text:after {
   display: block;
@@ -79,10 +81,12 @@ body {
 .navigation__link__icon-night {
   width: 30px;
   height: 30px;
+  transition: fill ease 200ms 50ms;
 }
 .navigation__link__icon-acc {
   width: 40px;
   height: 40px;
+  transition: fill ease 200ms 50ms;
 }
 [class*="navigation__link__icon"]:hover {
   stroke: var(--hover-color);
