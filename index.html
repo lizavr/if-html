@@ -266,35 +266,47 @@
           <div class="destination__nav">
             <div class="nav__tab">
               <input type="radio" id="tab-one" name="tab-group" checked />
-              <label for="tab-one">Regions</label>
-              <div class="nav__content col-lg-3">
-                <a class="nav__content-img" href="#">
-                  <img src="./img/destination/maldives.jpg" alt="Maldives" />
-                </a>
-                <div class="nav__content-title card__title">Maldives</div>
-              </div>
-              <div class="nav__content col-lg-3">
-                <a class="nav__content-img" href="#">
-                  <img src="./img/destination/spain.jpg" alt="Spain" />
-                </a>
-                <div class="nav__content-title card__title">Spain</div>
-              </div>
-              <div class="nav__content col-lg-3">
-                <a class="nav__content-img" href="#">
-                  <img src="./img/destination/norway.jpg" alt="Norway" />
-                </a>
-                <div class="nav__content-title card__title">Norway</div>
-              </div>
-              <div class="nav__content col-lg-3">
-                <a class="nav__content-img" href="#">
-                  <img src="./img/destination/island.jpg" alt="Island" />
-                </a>
-                <div class="nav__content-title card__title">Island</div>
+              <label class="col-lg-2" for="tab-one">Regions</label>
+              <div class="nav__content places">
+                <div class="place__card">
+                  <img
+                    class="card__img"
+                    src="./img/destination/maldives.jpg"
+                    alt="Maldives"
+                  />
+
+                  <div class="card__title">Maldives</div>
+                </div>
+                <div class="place__card">
+                  <img
+                    class="card__img"
+                    src="./img/destination/spain.jpg"
+                    alt="Spain"
+                  />
+                  <div class="card__title">Spain</div>
+                </div>
+                <div class="place__card">
+                  <img
+                    class="card__img"
+                    src="./img/destination/norway.jpg"
+                    alt="Norway"
+                  />
+
+                  <div class="card__title">Norway</div>
+                </div>
+                <div class="place__card">
+                  <img
+                    class="card__img"
+                    src="./img/destination/island.jpg"
+                    alt="Island"
+                  />
+                  <div class="card__title">Island</div>
+                </div>
               </div>
             </div>
             <div class="nav__tab">
               <input type="radio" id="tab-two" name="tab-group" />
-              <label for="tab-two">Cities</label>
+              <label class="col-lg-2" for="tab-two">Cities</label>
               <div class="nav__content col-lg-3">
                 <a class="nav__content-img" href="#">
                   <img src="./img/destination/berlin.jpg" alt="Berlin" />
@@ -328,7 +340,7 @@
             </div>
             <div class="nav__tab">
               <input type="radio" id="tab-three" name="tab-group" />
-              <label for="tab-three">Places of interest</label>
+              <label class="col-lg-2 label-three" for="tab-three">Places of interest</label>
               <div class="nav__content col-lg-3">
                 <a class="nav__content-img" href="#">
                   <img
@@ -374,6 +386,9 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="arrow__bottom">
+            <img src="./img/icons/arrow.svg" alt="arrow" />
           </div>
         </div>
       </section>
