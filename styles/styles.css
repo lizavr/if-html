@@ -414,11 +414,10 @@ body {
 }
 .nav__tab {
   float: left;
-  background-color: #f3f3f4;
   padding: 13px 0;
   border-radius: 8px;
 }
-.nav__tab label {
+.nav__tab__label {
   background-color: #f3f3f4;
   padding: 17px 52px;
   border-radius: 8px;
@@ -426,7 +425,7 @@ body {
   color: #383838;
 }
 .label-three {
-  padding: 17px 25px;
+  padding-right: 25px;
 }
 .nav__tab [type="radio"] {
   opacity: 0;
