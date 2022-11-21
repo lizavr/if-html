@@ -487,16 +487,19 @@ body {
 .card__img-dest {
   margin-bottom: 0;
 }
-.button__homes {
+.button__homes,
+.sign__main__btn {
   padding: 13px 24px;
   font-size: 18px;
   color: #3077c6;
   background-color: #ffffff;
+  border: 1px solid #3077c6;
+  border-radius: 8px;
+}
+.button__homes {
   position: absolute;
   top: calc(50% - 30px);
   left: calc(50% - 65px);
-  border: 1px solid #3077c6;
-  border-radius: 8px;
   display: none;
 }
 .shadow:hover .button__homes {
@@ -509,6 +512,35 @@ body {
   width: 28px;
   top: calc(50% - 20px);
   right: -10px;
+}
+/*//////////////sign////////////*/
+.sign {
+  background-color: #eaf0f9;
+}
+.container__sign{
+  padding: 52px 16px;
+}
+.sign__common {
+  display: flex;
+  position: relative;
+}
+.sign__user {
+  height: 86px;
+  width: 86px;
+}
+.sign__main__text {
+  margin-bottom: 20px;
+}
+.sign__main__btn {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.sign__cross {
+  height: 26px;
+  width: 26px;
+  top:-26px;
+  right: 52px;
+  position: absolute;
 }
 /*/////////////footer///////////*/
 .footer {
