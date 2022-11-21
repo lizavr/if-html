@@ -185,7 +185,7 @@
       </section>
       <section class="offer">
         <div class="container container__mobile">
-          <h2 class="title offer__title">What do we offer</h2>
+          <h2 class="title line__title">What do we offer</h2>
           <div class="offer__advantages">
             <div class="advantages__item col-lg-3 col-md-6 col-xs-6">
               <svg class="advantages__item__img">
@@ -262,7 +262,9 @@
       </section>
       <section class="destination">
         <div class="container">
-          <div class="title">The best destinations</div>
+          <div class="title line__title destination__title">
+            The best destinations
+          </div>
           <div class="destination__nav">
             <div class="nav__tab">
               <input type="radio" id="tab-one" name="tab-group" checked />
@@ -279,7 +281,7 @@
                       Book now
                     </button>
                   </div>
-                  <div class="card__title">Maldives</div>
+                  <div class="card__title card__title-dest">Maldives</div>
                 </div>
                 <div class="place__card">
                   <div class="shadow">
@@ -291,8 +293,12 @@
                     <button class="button__homes" type="submit">
                       Book now
                     </button>
+                    <img
+                      class="arrow__right"
+                      src="./img/icons/arrow_right.svg"
+                    />
                   </div>
-                  <div class="card__title">Spain</div>
+                  <div class="card__title card__title-dest">Spain</div>
                 </div>
                 <div class="place__card">
                   <div class="shadow">
@@ -305,7 +311,7 @@
                       Book now
                     </button>
                   </div>
-                  <div class="card__title">Norway</div>
+                  <div class="card__title card__title-dest">Norway</div>
                 </div>
                 <div class="place__card">
                   <div class="shadow">
@@ -318,18 +324,20 @@
                       Book now
                     </button>
                   </div>
-                  <div class="card__title">Island</div>
+                  <div class="card__title card__title-dest">Island</div>
                 </div>
               </div>
             </div>
             <div class="nav__tab">
               <input type="radio" id="tab-two" name="tab-group" />
-              <label class="nav__tab__label" for="tab-two">Cities</label>
+              <label class="nav__tab__label nav__tab__label-two" for="tab-two"
+                >Cities</label
+              >
               <div class="nav__content places">
                 <div class="place__card">
                   <div class="shadow">
                     <img
-                      class="card__img card__img-dest  "
+                      class="card__img card__img-dest"
                       src="./img/destination/berlin.jpg"
                       alt="Berlin, Germany"
                     />
@@ -337,24 +345,27 @@
                       Book now
                     </button>
                   </div>
-                  <div class="card__title">Berlin, Germany</div>
+                  <div class="card__title card__title-dest">
+                    Berlin, Germany
+                  </div>
                 </div>
                 <div class="place__card">
                   <div class="shadow">
                     <img
-                      class="card__img card__img-dest "
+                      class="card__img card__img-dest"
                       src="./img/destination/paris.jpg"
                       alt="Paris, France"
                     /><button class="button__homes" type="submit">
                       Book now
                     </button>
                   </div>
-                  <div class="card__title">Paris, France</div>
+                  <img class="arrow__right" src="./img/icons/arrow_right.svg" />
+                  <div class="card__title card__title-dest">Paris, France</div>
                 </div>
                 <div class="place__card">
                   <div class="shadow">
                     <img
-                      class="card__img card__img-dest "
+                      class="card__img card__img-dest"
                       src="./img/destination/budapest.jpg"
                       alt="Budapest, Hungary"
                     />
@@ -362,58 +373,66 @@
                       Book now
                     </button>
                   </div>
-                  <div class="card__title">Budapest, Hungary</div>
+
+                  <div class="card__title card__title-dest">
+                    Budapest, Hungary
+                  </div>
                 </div>
                 <div class="place__card">
                   <div class="shadow">
                     <img
-                      class="card__img card__img-dest "
+                      class="card__img card__img-dest"
                       src="./img/destination/london.jpg"
                       alt="London, United Kingdom"
                     /><button class="button__homes" type="submit">
                       Book now
                     </button>
                   </div>
-                  <div class="card__title">London, United Kingdom</div>
+                  <div class="card__title card__title-dest">
+                    London, United Kingdom
+                  </div>
                 </div>
               </div>
             </div>
             <div class="nav__tab">
               <input type="radio" id="tab-three" name="tab-group" />
               <label class="nav__tab__label" for="tab-three"
-                >Places of interest</label
-              >
+                >Places <span class="label__places-span">of interest</span>
+              </label>
               <div class="nav__content places">
                 <div class="place__card">
                   <div class="shadow">
                     <img
-                      class="card__img card__img-dest "
+                      class="card__img card__img-dest"
                       src="./img/destination/edinburghCastle.jpg"
                       alt="Edinburgh Castle, Edinburgh, United Kingdom"
                     /><button class="button__homes" type="submit">
                       Book now
                     </button>
                   </div>
-                  <div class="card__title">
+                  <div class="card__title card__title-dest">
                     Edinburgh Castle, Edinburgh, United Kingdom
                   </div>
                 </div>
                 <div class="place__card">
                   <div class="shadow">
                     <img
-                      class="card__img card__img-dest "
+                      class="card__img card__img-dest"
                       src="./img/destination/neuschwanstein.jpg"
                       alt="Neuschwanstein, Fussen, Germany"
                     /><button class="button__homes" type="submit">
                       Book now
                     </button>
                   </div>
-                  <div class="card__title">Neuschwanstein, Fussen, Germany</div>
+                  <img class="arrow__right" src="./img/icons/arrow_right.svg" />
+                  <div class="card__title card__title-dest">
+                    Neuschwanstein, Fussen, Germany
+                  </div>
                 </div>
                 <div class="place__card">
                   <div class="shadow">
                     <img
-                      class="card__img card__img-dest "
+                      class="card__img card__img-dest"
                       src="./img/destination/begBen.jpg"
                       alt="Big Ben, London, United Kingdom"
                     />
@@ -421,19 +440,23 @@
                       Book now
                     </button>
                   </div>
-                  <div class="card__title">Big Ben, London, United Kingdom</div>
+                  <div class="card__title card__title-dest">
+                    Big Ben, London, United Kingdom
+                  </div>
                 </div>
                 <div class="place__card">
                   <div class="shadow">
                     <img
-                      class="card__img card__img-dest "
+                      class="card__img card__img-dest"
                       src="./img/destination/colosseum.jpg"
                       alt="Colosseum, Roma, Italy"
                     /><button class="button__homes" type="submit">
                       Book now
                     </button>
                   </div>
-                  <div class="card__title">Colosseum, Roma, Italy</div>
+                  <div class="card__title card__title-dest">
+                    Colosseum, Roma, Italy
+                  </div>
                 </div>
               </div>
             </div>

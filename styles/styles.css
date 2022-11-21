@@ -290,7 +290,7 @@ body {
   font-size: 40px;
   margin-bottom: 105px;
 }
-.offer__title:after {
+.line__title:after {
   content: "";
   display: block;
   height: 4px;
@@ -408,7 +408,6 @@ body {
 /*destination*/
 .destination__nav {
   position: relative;
-  clear: both;
   height: calc(296px + 128px);
   margin-bottom: 50px;
 }
@@ -487,7 +486,6 @@ body {
 }
 .card__img-dest {
   margin-bottom: 0;
-
 }
 .button__homes {
   padding: 13px 24px;
@@ -503,6 +501,14 @@ body {
 }
 .shadow:hover .button__homes {
   display: block;
+}
+.arrow__right {
+  position: absolute;
+  display: none;
+  height: 28px;
+  width: 28px;
+  top: calc(50% - 20px);
+  right: -10px;
 }
 /*/////////////footer///////////*/
 .footer {
@@ -557,9 +563,6 @@ body {
   }
   .arrow {
     top: calc(((100vw - (4 * 16px)) / 3) / 2 - 8px);
-  }
-  .destination__nav {
-    height: calc((100vw - (4 * 16px)) / 3 + 128px);
   }
 }
 @media (max-width: 1200px) {
@@ -758,8 +761,11 @@ body {
   .arrow {
     top: calc(((100vw - (3 * 16px)) / 2) / 2 - 8px);
   }
-  .destination__nav {
-    height: calc((100vw - (3 * 16px)) / 2 + 128px);
+  .arrow__right {
+    display: block;
+  }
+  .arrow__bottom {
+    display: none;
   }
 }
 @media (max-width: 768px) {
@@ -878,18 +884,45 @@ body {
     margin-top: 32px;
     text-align: center;
   }
-}
-@media (max-width: 670px) {
-  .places {
-    padding: 0 16px;
-  }
-  .card__img {
-    min-width: 155px;
-    min-height: 155px;
+  .nav__tab__label {
+    background-color: #ffffff;
+    padding: 5px 15px;
+    margin-right: 16px;
+    border: 1px solid #f3f3f4;
+    font-size: 19px;
   }
   .title {
     font-size: 35px;
     margin-bottom: 60px;
+  }
+  .label__places-span {
+    display: none;
+  }
+}
+@media (max-width: 670px) {
+  .card__title,
+  .card__place {
+    font-size: 12px;
+  }
+  .places {
+    padding: 0 16px;
+  }
+  .card__img-dest {
+    width: 155px;
+    height: 155px;
+  }
+  .destination__title {
+    margin-bottom: 20px;
+  }
+  .destination__nav {
+    margin-bottom: 0;
+    height: calc(156px + 90px);
+  }
+  .card__title-dest {
+    margin-top: 0;
+  }
+  .nav__content {
+    top: 70px;
   }
 }
 @media (max-width: 360px) {
@@ -986,7 +1019,7 @@ body {
     font-size: 28px;
     margin-bottom: 32px;
   }
-  .offer__title:after {
+  .line__title:after {
     content: "";
     display: none;
   }
@@ -1027,10 +1060,7 @@ body {
   .card__title {
     margin-bottom: 4px;
   }
-  .card__title,
-  .card__place {
-    font-size: 12px;
-  }
+
   .footer__column__navigation {
     font-size: 15px;
   }
