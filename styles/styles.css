@@ -94,7 +94,7 @@ body {
 .burger__menu {
   display: none;
 }
-/*/////////////////////////main///////////////*/
+/*/ ////////////////////////main///////////////*/
 
 /*///////////////top-block/////////////////*/
 .top-block__container {
@@ -278,7 +278,7 @@ body {
   height: 40px;
 }
 
-/*/////////////////offer/////////////////*/
+/*/ ////////////////offer/////////////////*/
 .offer {
   font-size: 24px;
   color: #383838;
@@ -488,7 +488,7 @@ body {
   margin-bottom: 0;
 }
 .button__homes,
-.sign__main__btn {
+.sign__desktop__main__btn {
   padding: 13px 24px;
   font-size: 18px;
   color: #3077c6;
@@ -513,36 +513,43 @@ body {
   top: calc(50% - 20px);
   right: -10px;
 }
-/*//////////////sign////////////*/
-.sign {
+/*//////////////sign-desktop////////////*/
+.sign__desktop {
   background-color: #eaf0f9;
 }
-.container__sign{
+.container__sign {
   padding: 52px 16px;
 }
 .sign__common {
   display: flex;
   position: relative;
 }
-.sign__user {
+.sign__desktop__user {
   height: 86px;
   width: 86px;
 }
-.sign__main__text {
+.sign__desktop__main__text {
   margin-bottom: 20px;
 }
-.sign__main__btn {
+.sign__desktop__main__btn {
   padding-left: 32px;
   padding-right: 32px;
 }
 .sign__cross {
   height: 26px;
   width: 26px;
-  top:-26px;
+  top: -26px;
   right: 52px;
   position: absolute;
 }
-/*/////////////footer///////////*/
+.sign__desktop__main__text-mobile,
+.sign__install__mobile,
+.sign__mobile,
+.sign__logo {
+  display: none;
+}
+
+/*/ ////////////footer///////////*/
 .footer {
   background-color: #10367c;
 }
@@ -956,6 +963,58 @@ body {
   .nav__content {
     top: 70px;
   }
+  .container__sign {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .sign__desktop__user,
+  .sign__desktop__main__btn {
+    display: none;
+  }
+  .sign__desktop__main__text-mobile {
+    display: inline-block;
+  }
+  .sign__desktop {
+    background-color: #ffffff;
+  }
+  .sign__common {
+    justify-content: space-between;
+  }
+  .sign__cross {
+    top: calc(50% - 8px);
+    left: -8px;
+    width: 16px;
+    height: 16px;
+  }
+  .sign__desktop__main__text {
+    padding-top: 40px;
+    font-size: 12px;
+  }
+  .sign__desktop__main {
+    margin-right: 16px;
+  }
+  .sign__logo__block {
+    background-color: #3077c6;
+    min-height: 60px;
+    min-width: 60px;
+    border-radius: 8px;
+    position: relative;
+    margin: 24px 16px;
+  }
+  .sign__logo {
+    position: absolute;
+    display: inline-block;
+    height: 10px;
+    width: 53px;
+    fill: #ffffff;
+    top: calc(50% - 5px);
+  }
+  .sign__install__mobile {
+    display: inline-block;
+    background-color: #ffffff;
+    font-size: 14px;
+    color: #3077c6;
+  }
 }
 @media (max-width: 360px) {
   /*for mobiles*/
@@ -1091,6 +1150,10 @@ body {
   }
   .card__title {
     margin-bottom: 4px;
+  }
+  .container__sign {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .footer__column__navigation {
