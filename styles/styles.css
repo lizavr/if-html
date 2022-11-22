@@ -60,10 +60,22 @@ body {
   background-color: var(--hover-color);
   opacity: 0;
 }
+
 .navigation__link:hover:after {
   opacity: 1;
   display: block;
-  transition: opacity ease 300ms 100ms;
+  animation: appear-underline 1000ms ease infinite;
+}
+@keyframes appear-underline {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 .navigation__link__text:after {
   display: block;
@@ -80,16 +92,29 @@ body {
 .navigation__link__icon-night {
   width: 30px;
   height: 30px;
-  transition: fill ease 200ms 50ms;
 }
 .navigation__link__icon-acc {
   width: 40px;
   height: 40px;
-  transition: fill ease 200ms 50ms;
 }
 [class*="navigation__link__icon"]:hover {
   stroke: var(--hover-color);
   fill: var(--hover-color);
+  animation: color-icon 1000ms ease infinite;
+}
+@keyframes color-icon {
+  0% {
+    fill: #ffffff;
+    stroke: #ffffff;
+  }
+  50% {
+    stroke: var(--hover-color);
+    fill: var(--hover-color);
+  }
+  100% {
+    fill: #ffffff;
+    stroke: #ffffff;
+  }
 }
 .burger__menu {
   display: none;
