@@ -815,6 +815,10 @@ body {
   .top-block__form__button {
     width: 100%;
   }
+  .button__homes {
+    top: calc(50% - 30px);
+    left: calc(50% - 104px);
+  }
 }
 @media (max-width: 1000px) {
   .place__card:nth-child(3) {
@@ -979,6 +983,17 @@ body {
     width: 155px;
     height: 155px;
   }
+  .shadow:hover:after {
+    content: "";
+    height: 155px;
+    width: 155px;
+  }
+  .button__homes {
+    padding: 5px;
+    font-size: 15px;
+    top: calc(50% - 16px);
+    left: calc(50% - 96px);
+  }
   .destination__title {
     margin-bottom: 20px;
   }
@@ -1043,6 +1058,12 @@ body {
     background-color: #ffffff;
     font-size: 14px;
     color: #3077c6;
+  }
+}
+@media (max-width: 500px) {
+  .button__homes {
+    top: calc(50% - 16px);
+    left: calc(50% - 60px);
   }
 }
 @media (max-width: 360px) {
@@ -1180,11 +1201,13 @@ body {
   .card__title {
     margin-bottom: 4px;
   }
+  .button__homes {
+    left: calc(50% - 40px);
+  }
   .container__sign {
     padding-top: 0;
     padding-bottom: 0;
   }
-
   .footer__column__navigation {
     font-size: 15px;
   }
