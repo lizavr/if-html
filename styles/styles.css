@@ -309,8 +309,6 @@ main {
 
 /*/ ////////////////offer/////////////////*/
 .offer {
-  font-size: 24px;
-  color: #383838;
   order: 2;
 }
 .title {
@@ -455,7 +453,6 @@ main {
   padding: 17px 52px;
   border-radius: 8px;
   font-size: 24px;
-  color: #383838;
 }
 .label-three {
   padding-right: 25px;
@@ -588,9 +585,80 @@ main {
   display: none;
 }
 /*////////////////reviews///////////*/
-.review{
-  order:6;
+.review {
+  order: 6;
 }
+.review__card__img {
+  height: 400px;
+  width: 400px;
+  position: relative;
+}
+.review__card {
+  font-size: 18px;
+}
+.review__card__price {
+  color: #ffffff;
+  padding: 16px 0 11px 24px;
+  background-color: rgba(56, 56, 56, 0.7);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  transform: translateY(-100%);
+}
+.review__card__inform {
+  background-color: #eaf0f9;
+  padding: 24px;
+}
+.inform__top {
+  display: flex;
+  font-weight: 500;
+  color: #3077c6;
+  justify-content: space-between;
+  padding-bottom: 24px;
+}
+.top__name__hotel {
+  padding-bottom: 16px;
+}
+.top__rating {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.top__rating__mark {
+  color: #ffffff;
+  margin-bottom: 8px;
+  background-color: #10367c;
+  border-radius: 8px;
+  padding: 4px 11px;
+  font-size: 18px;
+}
+.top__rating__reviews {
+  font-size: 14px;
+  color: #bfbfbf;
+}
+.inform__middle {
+  display: flex;
+  margin-bottom: 24px;
+}
+.inform__middle__logo {
+  fill: #bfbfbf;
+  height: 53px;
+  width: 53px;
+  margin-right: 16px;
+}
+.person__name {
+  margin-bottom: 8px;
+}
+.country__flag {
+  width: 18px;
+  height: 11px;
+  margin-right: 8px;
+}
+.person__country {
+  color: #bfbfbf;
+}
+
 /*/ ////////////footer///////////*/
 .footer {
   background-color: #10367c;
@@ -771,7 +839,6 @@ main {
     opacity: 0;
   }
   .form__label {
-    color: #383838;
     height: 8px;
     align-items: center;
   }
