@@ -591,31 +591,44 @@ main {
 .review__cards {
   display: flex;
   gap: 16px;
-}
-.review__card__img {
-  height: 400px;
-  width: 400px;
   position: relative;
+  justify-content: space-evenly;
+}
+.review__arrow {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 25%;
+  right: -20px;
+  margin-right: 16px;
 }
 .review__card {
   font-size: 18px;
   display: flex;
   flex-direction: column;
 }
+.review__card__img {
+  position: relative;
+}
+.review__card__img img {
+  height: 400px;
+  width: 400px;
+}
 .review__card__price {
   color: #ffffff;
   padding: 16px 0 11px 24px;
   background-color: rgba(56, 56, 56, 0.7);
   position: absolute;
-  width: 100%;
   left: 0;
   top: 100%;
   transform: translateY(-100%);
+  min-width: 400px;
 }
 .review__card__inform {
   background-color: #eaf0f9;
   padding: 24px;
   flex: 1 1 auto;
+  min-width: 400px;
 }
 .inform__top {
   display: flex;
@@ -903,6 +916,9 @@ main {
     top: calc(50% - 30px);
     left: calc(50% - 104px);
   }
+  .review__card:nth-child(3) {
+    display: none;
+  }
 }
 @media (max-width: 1000px) {
   .place__card:nth-child(3) {
@@ -916,6 +932,14 @@ main {
   }
   .arrow__bottom {
     display: none;
+  }
+}
+@media (max-width: 948px) {
+  .review__card:nth-child(2) {
+    display: none;
+  }
+  .review__card {
+    align-items: center;
   }
 }
 @media (max-width: 768px) {
@@ -1097,6 +1121,7 @@ main {
     display: inline-block;
   }
   .sign {
+    order: 6;
     background-color: #ffffff;
   }
   .sign__common {
@@ -1137,17 +1162,65 @@ main {
     font-size: 14px;
     color: #3077c6;
   }
+  .review {
+    order: 5;
+    background-color: #eaf0f9;
+  }
+  .review__title {
+    display: none;
+  }
+  .review__card__img img {
+    max-height: 325px;
+    max-width: 325px;
+  }
+  .review__card__img {
+    padding-bottom: 12px;
+  }
+  .review__card__price,
+  .review__arrow {
+    display: none;
+  }
+  .review__card {
+    font-size: 15px;
+  }
+  .review__card__inform {
+    min-width: 325px;
+    padding: 0;
+  }
+  .inform__top {
+    padding-bottom: 12px;
+  }
+  .top__name__hotel {
+    padding-bottom: 8px;
+  }
+  .top__rating__mark {
+    margin-bottom: 4px;
+    padding: 3px 9px;
+    font-size: 15px;
+  }
+  .top__rating__reviews {
+    font-size: 12px;
+  }
+  .inform__middle {
+    margin-bottom: 16px;
+  }
+  .inform__middle__logo {
+    margin-right: 8px;
+    height: 45px;
+    width: 45px;
+  }
+  .person__name {
+    margin-bottom: 4px;
+  }
+  .country__flag {
+    margin-right: 4px;
+  }
 }
 @media (max-width: 500px) {
   .button__homes {
     top: calc(50% - 16px);
     left: calc(50% - 60px);
   }
-  .circle {
-    top: 30%;
-  }
-}
-@media (max-width: 500px) {
   .circle {
     top: 20%;
   }
