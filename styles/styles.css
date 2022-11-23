@@ -354,7 +354,7 @@ body {
   border-radius: 50%;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   position: absolute;
-  top: calc(296px / 2 - 20px);
+  top: 30%;
   right: -20px;
   z-index: 2;
 }
@@ -368,8 +368,8 @@ body {
   width: 12px;
   transform: rotate(45deg);
   position: absolute;
-  top: calc(296px / 2 - 8px);
-  right: -8px;
+  top: 35%;
+  right: 12px;
   z-index: 3;
 }
 .card__title {
@@ -627,10 +627,7 @@ body {
     width: 33%;
   }
   .circle {
-    top: calc(((100vw - (4 * 16px)) / 3) / 2 - 20px);
-  }
-  .arrow {
-    top: calc(((100vw - (4 * 16px)) / 3) / 2 - 8px);
+    top: 35%;
   }
 }
 @media (max-width: 1200px) {
@@ -826,12 +823,6 @@ body {
   }
   .place__card {
     width: 50%;
-  }
-  .circle {
-    top: calc(((100vw - (3 * 16px)) / 2) / 2 - 20px);
-  }
-  .arrow {
-    top: calc(((100vw - (3 * 16px)) / 2) / 2 - 8px);
   }
   .arrow__right {
     display: block;
@@ -1065,6 +1056,14 @@ body {
     top: calc(50% - 16px);
     left: calc(50% - 60px);
   }
+  .circle {
+    top: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .circle {
+    top: 20%;
+  }
 }
 @media (max-width: 360px) {
   /*for mobiles*/
@@ -1180,14 +1179,10 @@ body {
     padding: 0;
   }
   .circle {
-    top: calc((155px / 2) - 20px);
-  }
-  .arrow {
-    top: calc((155px / 2) - 10px);
-  }
-  .circle {
     height: 28px;
     width: 28px;
+    top: 28%;
+    right: -12px;
   }
   .arrow {
     height: 8px;
