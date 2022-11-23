@@ -120,7 +120,10 @@ body {
   display: none;
 }
 /*/ ////////////////////////main///////////////*/
-
+main {
+  display: flex;
+  flex-direction: column;
+}
 /*///////////////top-block/////////////////*/
 .top-block__container {
   max-width: 1267px;
@@ -134,6 +137,7 @@ body {
   background-repeat: no-repeat;
   background-position: 0 5%;
   background-size: cover;
+  order: 1;
 }
 .top-block__filter {
   backdrop-filter: brightness(0.75);
@@ -307,6 +311,7 @@ body {
 .offer {
   font-size: 24px;
   color: #383838;
+  order: 2;
 }
 .title {
   display: block;
@@ -331,6 +336,7 @@ body {
 /*/////////////////////////homes/////////////////*/
 .homes {
   background-color: #eaf0f9;
+  order: 3;
 }
 .places {
   display: flex;
@@ -431,6 +437,9 @@ body {
 }
 
 /*destination*/
+.destination {
+  order: 4;
+}
 .destination__nav {
   position: relative;
   height: calc(296px + 128px);
@@ -538,9 +547,10 @@ body {
   top: calc(50% - 20px);
   right: -10px;
 }
-/*//////////////sign-desktop////////////*/
+/*//////////////sign////////////*/
 .sign {
   background-color: #eaf0f9;
+  order: 5;
 }
 .container__sign {
   padding: 52px 16px;
@@ -577,7 +587,11 @@ body {
 .sign__logo {
   display: none;
 }
-
+/*////////////////reviews///////////*/
+.review{
+  order:6;
+}
+.
 /*/ ////////////footer///////////*/
 .footer {
   background-color: #10367c;
