@@ -588,6 +588,10 @@ main {
 .review {
   order: 6;
 }
+.review__cards {
+  display: flex;
+  gap: 16px;
+}
 .review__card__img {
   height: 400px;
   width: 400px;
