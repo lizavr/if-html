@@ -1,0 +1,188 @@
+@media (max-width: 360px) {
+  :root {
+    --width-col: 100% / 6;
+  }
+
+  .col-xs-1 {
+    width: var(--width-col);
+  }
+
+  .col-xs-2 {
+    width: calc(var(--width-col) * 2);
+  }
+
+  .col-xs-3 {
+    width: calc(100% / 2);
+  }
+
+  .col-xs-4 {
+    width: calc(var(--width-col) * 4);
+  }
+
+  .col-xs-5 {
+    width: calc(var(--width-col) * 5);
+  }
+
+  .col-xs-6 {
+    width: 100%;
+  }
+
+  .container {
+    padding-bottom: 40px;
+  }
+
+  .container__mobile {
+    padding-top: 24px;
+  }
+
+  .navigation__link__icon-night {
+    width: 16px;
+    height: 16px;
+  }
+
+  .navigation__link__icon-acc {
+    width: 24px;
+    height: 24px;
+  }
+
+  .burger__menu {
+    width: 24px;
+    height: 16px;
+    display: flex;
+    margin-right: 0;
+  }
+
+  .burger__menu::before,
+  .burger__menu::after {
+    content: '';
+    height: 2px;
+  }
+
+  .burger__menu__center {
+    height: 2px;
+  }
+
+  .header__inner {
+    padding: 12px 0;
+  }
+
+  .header__inner__logo {
+    height: 24px;
+    width: 120px;
+  }
+
+  .top-block {
+    height: auto;
+  }
+
+  .top-block__filter {
+    height: auto;
+  }
+
+  .top-block__title {
+    font-size: 30px;
+    margin: 35px 0 30px;
+    width: 100%;
+  }
+
+  .form__input {
+    font-size: 15px;
+  }
+
+  .city__input-mobile {
+    padding-left: 43px;
+  }
+
+  .form__label {
+    font-size: 15px;
+  }
+
+  .top-block__form__button {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 19px;
+  }
+
+  .top-block__apps {
+    margin-top: 32px;
+    padding-bottom: 40px;
+  }
+
+  .offer__advantages {
+    margin-top: 0;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .line__title::after {
+    content: '';
+    display: none;
+  }
+
+  .advantages__item__img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .advantages__item {
+    margin-top: 32px;
+    margin-bottom: 0;
+  }
+
+  .advantages__item__text {
+    margin-top: 16px;
+    font-size: 15px;
+  }
+
+  .places {
+    padding: 0;
+  }
+
+  .circle {
+    height: 28px;
+    width: 28px;
+    top: 28%;
+    right: -12px;
+  }
+
+  .arrow {
+    height: 8px;
+    width: 8px;
+  }
+
+  .card__img {
+    width: 155px;
+    height: 155px;
+    margin-bottom: 8px;
+  }
+
+  .card__title {
+    margin-bottom: 4px;
+  }
+
+  .button__homes {
+    left: calc(50% - 40px);
+  }
+
+  .container__sign {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .footer__column__navigation {
+    font-size: 15px;
+  }
+
+  .column__navigation__element {
+    margin: 0;
+  }
+
+  .footer__copyright {
+    margin-top: 32px;
+    text-align: center;
+    font-size: 12px;
+  }
+}

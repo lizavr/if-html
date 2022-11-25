@@ -1,0 +1,177 @@
+@media (max-width: 670px) {
+  .card__title,
+  .card__place {
+    font-size: 12px;
+  }
+
+  .places {
+    padding: 0 16px;
+  }
+
+  .card__img-dest {
+    width: 155px;
+    height: 155px;
+  }
+
+  .shadow:hover::after {
+    content: '';
+    height: 155px;
+    width: 155px;
+  }
+
+  .button__homes {
+    padding: 5px;
+    font-size: 15px;
+    top: calc(50% - 16px);
+    left: calc(50% - 96px);
+  }
+
+  .destination__title {
+    margin-bottom: 20px;
+  }
+
+  .destination__nav {
+    margin-bottom: 0;
+    height: calc(156px + 90px);
+  }
+
+  .card__title-dest {
+    margin-top: 0;
+  }
+
+  .nav__content {
+    top: 70px;
+  }
+
+  .container__sign {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .sign__desktop__user,
+  .sign__desktop__main__btn {
+    display: none;
+  }
+
+  .sign__main__text-mobile {
+    display: inline-block;
+  }
+
+  .sign {
+    order: 6;
+    background-color: #fff;
+  }
+
+  .sign__common {
+    justify-content: space-between;
+  }
+
+  .sign__cross {
+    top: calc(50% - 8px);
+    left: -8px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .sign__main__text {
+    padding-top: 40px;
+    font-size: 12px;
+  }
+
+  .sign__desktop__main {
+    margin-right: 16px;
+  }
+
+  .sign__logo__block {
+    background-color: #3077c6;
+    min-height: 60px;
+    min-width: 60px;
+    border-radius: 8px;
+    position: relative;
+    margin: 24px 16px;
+  }
+
+  .sign__logo {
+    position: absolute;
+    display: inline-block;
+    height: 10px;
+    width: 53px;
+    fill: #fff;
+    top: calc(50% - 5px);
+  }
+
+  .sign__install__mobile {
+    display: inline-block;
+    background-color: #fff;
+    font-size: 14px;
+    color: #3077c6;
+  }
+
+  .review {
+    order: 5;
+    background-color: #eaf0f9;
+  }
+
+  .review__title {
+    display: none;
+  }
+
+  .review__card__img img {
+    max-height: 325px;
+    max-width: 325px;
+  }
+
+  .review__card__img {
+    padding-bottom: 12px;
+  }
+
+  .review__card__price,
+  .review__arrow {
+    display: none;
+  }
+
+  .review__card {
+    font-size: 15px;
+  }
+
+  .review__card__inform {
+    min-width: 325px;
+    padding: 0;
+  }
+
+  .inform__top {
+    padding-bottom: 12px;
+  }
+
+  .top__name__hotel {
+    padding-bottom: 8px;
+  }
+
+  .top__rating__mark {
+    margin-bottom: 4px;
+    padding: 3px 9px;
+    font-size: 15px;
+  }
+
+  .top__rating__reviews {
+    font-size: 12px;
+  }
+
+  .inform__middle {
+    margin-bottom: 16px;
+  }
+
+  .inform__middle__logo {
+    margin-right: 8px;
+    height: 45px;
+    width: 45px;
+  }
+
+  .person__name {
+    margin-bottom: 4px;
+  }
+
+  .country__flag {
+    margin-right: 4px;
+  }
+}

@@ -1,0 +1,26 @@
+.offer {
+  order: 2;
+}
+
+.title {
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 105px;
+}
+
+.line__title::after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 100px;
+  background-color: var(--hover-color);
+  margin: 20px auto;
+}
+
+.offer__advantages {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
