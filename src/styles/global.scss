@@ -1,3 +1,30 @@
 .global-sprite {
   display: none;
 }
+
+:root {
+  --hover-color: #f5bd41;
+  --width-col: calc(100% / 12);
+  --width-underline: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  border: none;
+}
+body {
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  color: #383838;
+  line-height: 1.2;
+}
+
+.container {
+  max-width: 1267px;
+  margin: 0 auto;
+  padding: 120px 16px;
+}
