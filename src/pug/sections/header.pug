@@ -1,0 +1,19 @@
+mixin header
+  header.header
+    .header__inner
+      svg.header__inner__logo
+        use(href='#logo')
+      nav.header__inner__navigation
+        #open.navigation__block-one
+          a.navigation__link.navigation__link__text(href='#') Stays
+          a.navigation__link.navigation__link__text(href='#') Attractions
+        .navigation__block-two
+          a.navigation__link(href='#')
+            svg.navigation__link__icon-night
+              use(href='#night')
+          a.navigation__link(href='#')
+            svg.navigation__link__icon-acc
+              use(href='#acc')
+        .burger
+          a.burger__menu(href='#open', type='button')
+            span.burger__menu__center
