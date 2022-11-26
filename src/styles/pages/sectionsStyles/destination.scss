@@ -62,13 +62,13 @@
   width: 40px;
   margin: 100px auto 0;
 }
-.shadow {
+.shadow-dest {
   position: relative;
 }
 .card__title {
   margin-top: 24px;
 }
-.shadow:hover:after {
+.shadow-dest:hover:after {
   content: '';
   top: 0;
   left: 0;
@@ -96,7 +96,7 @@
   left: calc(50% - 65px);
   display: none;
 }
-.shadow:hover .button__homes {
+.shadow-dest:hover .button__homes {
   display: block;
 }
 .arrow__right {
