@@ -1,131 +1,111 @@
+-
+  var navTabs = [
+    {
+      tabIdFor:'tab-one',
+      navTabLabel:'Regions',
+      isChecked: true,
+      placeDestCards: [
+        {
+          imgDest:'maldives.jpg',
+          altDest:'Maldives',
+          titleDest:'Maldives'
+        },
+        {
+          imgDest:'spain.jpg',
+          altDest:'Spain',
+          titleDest:'Spain'
+        },
+        {
+          imgDest:'norway.jpg',
+          altDest:'Norway',
+          titleDest:'Norway'
+        },
+        {
+          imgDest: 'island.jpg',
+          altDest: 'Island',
+          titleDest: 'Island'
+        }]
+    },
+    {
+      tabIdFor: 'tab-two',
+      navTabLabel: 'Cities',
+      isChecked: false,
+      placeDestCards: [
+        {
+          imgDest: 'berlin.jpg',
+          altDest: 'Berlin, Germany',
+          titleDest: 'Berlin, Germany'
+        },
+        {
+          imgDest: 'paris.jpg',
+          altDest: 'Paris, France',
+          titleDest: 'Paris, France'
+        },
+        {
+          imgDest: 'budapest.jpg',
+          altDest: 'Budapest, Hungary',
+          titleDest: 'Budapest, Hungary'
+        },
+        {
+          imgDest: 'london.jpg',
+          altDest: 'London, United Kingdom',
+          titleDest: 'London, United Kingdom'
+        }]
+    },
+    {
+      tabIdFor: 'tab-three',
+      navTabLabel: 'Places',
+      isChecked: false,
+      placeDestCards: [
+        {
+          imgDest: 'edinburghCastle.jpg',
+          altDest: 'Edinburgh Castle, Edinburgh, United Kingdom',
+          titleDest: 'Edinburgh Castle, Edinburgh, United Kingdom'
+        },
+        {
+          imgDest: 'neuschwanstein.jpg',
+          altDest: 'Neuschwanstein, Fussen, Germany',
+          titleDest: 'Neuschwanstein, Fussen, Germany'
+        },
+        {
+          imgDest: 'begBen.jpg',
+          altDest: 'Big Ben, London, United Kingdom',
+          titleDest: 'Big Ben, London, United Kingdom'
+        },
+        {
+          imgDest: 'colosseum.jpg',
+          altDest: 'Colosseum, Roma, Italy',
+          titleDest: 'Colosseum, Roma, Italy'
+        }]
+    }]
+
+mixin placeDestCard(imgDest, altDest, titleDest)
+  .place__card
+    .shadow
+      img.card__img.card__img-dest(src=require('../../assets/images/destination/' + imgDest), alt='#{ altDest }')
+      button.button__homes(type='submit')
+        | Book now
+    .card__title.card__title-dest #{ titleDest }
+
+mixin navTab(tabIdFor,navTabLabel,isChecked,placeDestCards)
+  .nav__tab
+    if (isChecked)
+      input(id=tabIdFor, type='radio', name='tab-group', checked='')
+    else
+      input(id=tabIdFor, type='radio', name='tab-group')
+    label.nav__tab__label(for=tabIdFor) #{ navTabLabel }
+    .nav__content.places
+      each placeCard in placeDestCards
+        +placeDestCard(placeCard.imgDest, placeCard.altDest, placeCard.titleDest)
+
 mixin destination
   section.destination
     .container
       h2.title.line__title.destination__title
         | The best destinations
       .destination__nav
-        .nav__tab
-          input#tab-one(type='radio', name='tab-group', checked='')
-          label.nav__tab__label(for='tab-one') Regions
-          .nav__content.places
-            .place__card
-              .shadow
-                img.card__img.card__img-dest(
-                  src=require('../../assets/images/destination/maldives.jpg'),
-                  alt='Maldives'
-                )
-                button.button__homes(type='submit')
-                  | Book now
-              .card__title.card__title-dest Maldives
-            .place__card
-              .shadow
-                img.card__img.card__img-dest(src=require('../../assets/images/destination/spain.jpg'), alt='Spain')
-                button.button__homes(type='submit')
-                  | Book now
-                img.arrow__right(src=require('../../assets/images/icons/arrow_right.svg'), alt='arrow_right')
-              .card__title.card__title-dest Spain
-            .place__card
-              .shadow
-                img.card__img.card__img-dest(src=require('../../assets/images/destination/norway.jpg'), alt='Norway')
-                button.button__homes(type='submit')
-                  | Book now
-              .card__title.card__title-dest Norway
-            .place__card
-              .shadow
-                img.card__img.card__img-dest(src=require('../../assets/images/destination/island.jpg'), alt='Island')
-                button.button__homes(type='submit')
-                  | Book now
-              .card__title.card__title-dest Island
-        .nav__tab
-          input#tab-two(type='radio', name='tab-group')
-          label.nav__tab__label.nav__tab__label-two(for='tab-two') Cities
-          .nav__content.places
-            .place__card
-              .shadow
-                img.card__img.card__img-dest(
-                  src=require('../../assets/images/destination/berlin.jpg'),
-                  alt='Berlin, Germany'
-                )
-                button.button__homes(type='submit')
-                  | Book now
-              .card__title.card__title-dest
-                | Berlin, Germany
-            .place__card
-              .shadow
-                img.card__img.card__img-dest(
-                  src=require('../../assets/images/destination/paris.jpg'),
-                  alt='Paris, France'
-                )
-                button.button__homes(type='submit')
-                  | Book now
-              img.arrow__right(src=require('../../assets/images/icons/arrow_right.svg'), alt='arrow_right')
-              .card__title.card__title-dest Paris, France
-            .place__card
-              .shadow
-                img.card__img.card__img-dest(
-                  src=require('../../assets/images/destination/budapest.jpg'),
-                  alt='Budapest, Hungary'
-                )
-                button.button__homes(type='submit')
-                  | Book now
-              .card__title.card__title-dest
-                | Budapest, Hungary
-            .place__card
-              .shadow
-                img.card__img.card__img-dest(
-                  src=require('../../assets/images/destination/london.jpg'),
-                  alt='London, United Kingdom'
-                )
-                button.button__homes(type='submit')
-                  | Book now
-              .card__title.card__title-dest
-                | London, United Kingdom
-        .nav__tab
-          input#tab-three(type='radio', name='tab-group')
-          label.nav__tab__label(for='tab-three')
-            | Places
-            span.label__places-span &nbsp;of interest
-          .nav__content.places
-            .place__card
-              .shadow
-                img.card__img.card__img-dest(
-                  src=require('../../assets/images/destination/edinburghCastle.jpg'),
-                  alt='Edinburgh Castle, Edinburgh, United Kingdom'
-                )
-                button.button__homes(type='submit')
-                  | Book now
-              .card__title.card__title-dest
-                | Edinburgh Castle, Edinburgh, United Kingdom
-            .place__card
-              .shadow
-                img.card__img.card__img-dest(
-                  src=require('../../assets/images/destination/neuschwanstein.jpg'),
-                  alt='Neuschwanstein, Fussen, Germany'
-                )
-                button.button__homes(type='submit')
-                  | Book now
-              img.arrow__right(src=require('../../assets/images/icons/arrow_right.svg'), alt='arrow_right')
-              .card__title.card__title-dest
-                | Neuschwanstein, Fussen, Germany
-            .place__card
-              .shadow
-                img.card__img.card__img-dest(
-                  src=require('../../assets/images/destination/begBen.jpg'),
-                  alt='Big Ben, London, United Kingdom'
-                )
-                button.button__homes(type='submit')
-                  | Book now
-              .card__title.card__title-dest
-                | Big Ben, London, United Kingdom
-            .place__card
-              .shadow
-                img.card__img.card__img-dest(
-                  src=require('../../assets/images/destination/colosseum.jpg'),
-                  alt='Colosseum, Roma, Italy'
-                )
-                button.button__homes(type='submit')
-                  | Book now
-              .card__title.card__title-dest
-                | Colosseum, Roma, Italy
+        each navTab in navTabs
+          +navTab(navTab.tabIdFor,navTab.navTabLabel,navTab.isChecked,navTab.placeDestCards)
+
       .arrow__bottom
         img(src=require('../../assets/images/icons/arrow.svg'), alt='arrow')
