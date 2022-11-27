@@ -1,6 +1,23 @@
 .destination {
   order: 4;
 }
+.dest__places {
+  display: flex;
+  gap: 16px;
+  position: relative;
+}
+
+.dest__card__img {
+  margin-bottom: 24px;
+}
+
+
+
+.dest__place__card {
+  display: flex;
+  flex-direction: column;
+}
+
 .destination__nav {
   position: relative;
   height: calc(296px + 128px);

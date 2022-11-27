@@ -6,17 +6,17 @@
       { img:'friendship.jpg',alt:'hotel friendship',title:'Hostel Friendship',place:'Berlin, Germany'}
   ]
 mixin placeCard(img,alt,title,place)
-  .place__card.swiper-slide
-    img.card__img(src=require('../../assets/images/' + img), alt='#{ alt }')
-    .card__title #{ title }
-    .card__place #{ place }
+  .homes__place__card.swiper-slide
+    img.homes__card__img(src=require('../../assets/images/' + img), alt='#{ alt }')
+    .homes__card__title #{ title }
+    .homes__card__place #{ place }
 
 mixin homes
   section.homes
     .container
       h2.title Homes guests loves
 
-      .places.swiper
+      .homes__places.swiper
         .swiper-wrapper
           each card in homeCards
             +placeCard(card.img,card.alt,card.title,card.place)

@@ -4,7 +4,7 @@ console.log(programName);
 import Swiper from 'swiper/bundle';
 
 var swiper = new Swiper('.swiper', {
-  slidesPerView: 3,
+  slidesPerView: 4,
   direction: getDirection(),
   navigation: {
     nextEl: '.swiper-button-next',
@@ -14,6 +14,12 @@ var swiper = new Swiper('.swiper', {
     resize: function () {
       swiper.changeDirection(getDirection());
     },
+  },
+  breakpoints: {
+    0: { slidesPerView: 2 },
+    1000: { slidesPerView: 2 },
+    1200: { slidesPerView: 3 },
+    1300: { slidesPerView: 4 },
   },
 });
 

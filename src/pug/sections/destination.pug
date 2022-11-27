@@ -80,9 +80,9 @@
     }]
 
 mixin placeDestCard(imgDest, altDest, titleDest)
-  .place__card
+  .dest__place__card
     .shadow-dest
-      img.card__img.card__img-dest(src=require('../../assets/images/destination/' + imgDest), alt='#{ altDest }')
+      img.dest__card__img.card__img-dest(src=require('../../assets/images/destination/' + imgDest), alt='#{ altDest }')
       button.button__homes(type='submit')
         | Book now
     .card__title.card__title-dest #{ titleDest }
@@ -94,7 +94,7 @@ mixin navTab(tabIdFor,navTabLabel,isChecked,placeDestCards)
     else
       input(id=tabIdFor, type='radio', name='tab-group')
     label.nav__tab__label(for=tabIdFor) #{ navTabLabel }
-    .nav__content.places
+    .nav__content.dest__places
       each placeCard in placeDestCards
         +placeDestCard(placeCard.imgDest, placeCard.altDest, placeCard.titleDest)
 

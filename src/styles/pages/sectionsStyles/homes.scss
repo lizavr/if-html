@@ -3,21 +3,19 @@
   order: 3;
 }
 
-.places {
+.homes__places {
   display: flex;
   gap: 16px;
   position: relative;
 }
 
-.card__img {
+.homes__card__img {
   margin-bottom: 24px;
 }
 
-.places {
-  position: relative;
-}
 
-.place__card {
+
+.homes__place__card {
   display: flex;
   flex-direction: column;
 }
