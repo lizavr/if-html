@@ -5,6 +5,8 @@ import Swiper from 'swiper/bundle';
 
 var swiper = new Swiper('.swiper', {
   slidesPerView: 4,
+  spaceBetween:16,
+  loop:true,
   direction: getDirection(),
   navigation: {
     nextEl: '.swiper-button-next',
