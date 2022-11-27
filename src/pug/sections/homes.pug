@@ -8,8 +8,8 @@
 mixin placeCard(img,alt,title,place)
   .homes__place__card.swiper-slide
     img.homes__card__img(src=require('../../assets/images/' + img), alt='#{ alt }')
-    .homes__card__title #{ title }
-    .homes__card__place #{ place }
+    .card__title #{ title }
+    .card__place #{ place }
 
 mixin homes
   section.homes
