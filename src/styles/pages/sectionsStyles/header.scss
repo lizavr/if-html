@@ -77,8 +77,8 @@
 }
 
 [class*='navigation__link__icon'] {
-  fill: #fff;
-  stroke: #fff;
+  fill: var(--white-color);
+  stroke: var(--white-color);
   &:hover {
     stroke: var(--hover-color);
     fill: var(--hover-color);
@@ -88,8 +88,8 @@
 
 @keyframes color-icon {
   0% {
-    fill: #fff;
-    stroke: #fff;
+    fill: var(--white-color);
+    stroke: var(--white-color);
   }
 
   50% {
@@ -98,8 +98,8 @@
   }
 
   100% {
-    fill: #fff;
-    stroke: #fff;
+    fill: var(--white-color);
+    stroke: var(--white-color);
   }
 }
 

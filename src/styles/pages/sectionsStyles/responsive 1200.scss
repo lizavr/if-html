@@ -180,7 +180,7 @@
 
   .people__border-top,
   .people__border-bottom {
-    background-color: #fff;
+    background-color: var(--white-color);
     z-index: 2;
   }
 
@@ -189,7 +189,7 @@
   }
 
   .people__label {
-    background-color: #fff;
+    background-color: var(--white-color);
   }
 
   .adults-label {
@@ -214,8 +214,8 @@
   }
 
   .children-border {
-    border-left: 3px solid #bfbfbf;
-    border-right: 3px solid #bfbfbf;
+    border-left: 3px solid var(--card-place-color);
+    border-right: 3px solid var(--card-place-color);
   }
 
   .top-block__form__button {

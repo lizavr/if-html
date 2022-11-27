@@ -1,5 +1,5 @@
 .homes {
-  background-color: #eaf0f9;
+  background-color: var(--center-bgcolor);
   order: 3;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .circle {
-  background-color: #f3f3f4;
+  background-color: var(--circle-color);
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -30,7 +30,7 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: #383838;
+  color: var(--text-color);
 }
 .swiper-button-next:after,
 .swiper-button-prev:after {
@@ -38,12 +38,12 @@
 }
 
 .card__title {
-  color: #3077c6;
+  color: var(--logo-bgcolor);
   margin-bottom: 24px;
 }
 
 .card__place {
-  color: #bfbfbf;
+  color: var(--card-place-color);
 }
 
 /* for desktop */

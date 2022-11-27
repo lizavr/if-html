@@ -1,5 +1,5 @@
 .sign {
-  background-color: #eaf0f9;
+  background-color: var(--center-bgcolor);
   order: 5;
 }
 
@@ -14,7 +14,7 @@
 
 .sign__link {
   margin-right: 24px;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .sign__desktop__user {
