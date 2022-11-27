@@ -12,7 +12,7 @@
   border-radius: 8px;
 }
 .nav__tab__label {
-  background-color: #f3f3f4;
+  background-color: var(--white-color);
   padding: 17px 52px;
   border-radius: 8px;
   font-size: 24px;
@@ -37,11 +37,11 @@
   transition: all 0.6s ease;
 }
 [type='radio']:focus ~ label {
-  color: #ffffff;
+  color: var(--white-color);
 }
 [type='radio']:checked ~ label {
-  background-color: #3077c6;
-  color: #ffffff;
+  background-color: var(--logo-bgcolor);
+  color: var(--white-color);
   z-index: 2;
 }
 [type='radio']:checked ~ label ~ .nav__content {
@@ -52,7 +52,7 @@
   transform: translateX(0);
 }
 .card__img--hover {
-  box-shadow: 0 4px 70px 0 #38383880 inset;
+  box-shadow: 0 4px 70px 0 var(--shadow-color) inset;
   height: 100%;
   z-index: 5;
   width: 100%;
@@ -75,7 +75,7 @@
   height: 296px;
   width: 296px;
   position: absolute;
-  box-shadow: 0 4px 70px 0 #38383880 inset;
+  box-shadow: 0 4px 70px 0 var(--shadow-color) inset;
   z-index: 3;
 }
 .card__img-dest {
@@ -85,9 +85,9 @@
 .sign__desktop__main__btn {
   padding: 13px 24px;
   font-size: 18px;
-  color: #3077c6;
-  background-color: #ffffff;
-  border: 1px solid #3077c6;
+  color: var(--logo-bgcolor);
+  background-color: var(--white-color);
+  border: 1px solid var(--logo-bgcolor);
   border-radius: 8px;
 }
 .button__homes {
