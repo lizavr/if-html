@@ -3,7 +3,14 @@
   .card__place {
     font-size: 12px;
   }
-
+  .circle{
+    height: 28px;
+    width: 28px;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 12px;
+  }
   .places {
     padding: 0 16px;
   }

@@ -19,7 +19,7 @@ var swiper = new Swiper('.swiper', {
   },
   breakpoints: {
     0: { slidesPerView: 2 },
-    1000: { slidesPerView: 2 },
+    752: { slidesPerView: 2 },
     1200: { slidesPerView: 3 },
     1300: { slidesPerView: 4 },
   },
@@ -27,7 +27,7 @@ var swiper = new Swiper('.swiper', {
 
 function getDirection() {
   var windowWidth = window.innerWidth;
-  var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+  var direction = window.innerWidth <= 100 ? 'vertical' : 'horizontal';
 
   return direction;
 }

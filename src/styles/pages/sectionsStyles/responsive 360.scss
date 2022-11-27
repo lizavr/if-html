@@ -141,19 +141,8 @@
     padding: 0;
   }
 
-  .circle {
-    height: 28px;
-    width: 28px;
-    top: 28%;
-    right: -12px;
-  }
 
-  .arrow {
-    height: 8px;
-    width: 8px;
-  }
-
-  .card__img {
+  .homes__card__img {
     width: 155px;
     height: 155px;
     margin-bottom: 8px;
@@ -161,6 +150,7 @@
 
   .card__title {
     margin-bottom: 4px;
+    margin-top: 0;
   }
 
   .button__homes {
