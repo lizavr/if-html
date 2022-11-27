@@ -1,5 +1,5 @@
 {
-  "name": "webpack-pug-scss-boilerplate",
+  "name": "triphouse",
   "version": "1.0.0",
   "description": "Webpack boilerplate for pug+scss/sass development",
   "main": "src/js/index.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Intellect-Fox/webpack-pug-scss-boilerplate.git"
+    "url": "git+https://github.com/lizavr"
   },
   "keywords": [
     "webpack",
@@ -22,7 +22,7 @@
     "scss",
     "es6+"
   ],
-  "author": "Andrei Bahamolau",
+  "author": "Lizaveta Rabetskaya",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Intellect-Fox/webpack-pug-scss-boilerplate/issues"
