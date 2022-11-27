@@ -34,7 +34,7 @@
 }
 
 .review__card__price {
-  color: #fff;
+  color: var(--white-color);
   padding: 16px 0 11px 24px;
   background-color: rgb(56 56 56 / 70%);
   position: absolute;
@@ -45,7 +45,7 @@
 }
 
 .review__card__inform {
-  background-color: #eaf0f9;
+  background-color: var(--center-bgcolor);
   padding: 24px;
   flex: 1 1 auto;
   min-width: 400px;
@@ -54,7 +54,7 @@
 .inform__top {
   display: flex;
   font-weight: 500;
-  color: #3077c6;
+  color: var(--logo-bgcolor);
   justify-content: space-between;
   padding-bottom: 24px;
 }
@@ -70,9 +70,9 @@
 }
 
 .top__rating__mark {
-  color: #fff;
+  color: var(--white-color);
   margin-bottom: 8px;
-  background-color: #10367c;
+  background-color: var(--footer-bgcolor);
   border-radius: 8px;
   padding: 4px 11px;
   font-size: 18px;
@@ -80,7 +80,7 @@
 
 .top__rating__reviews {
   font-size: 14px;
-  color: #bfbfbf;
+  color: var(--card-place-color);
 }
 
 .inform__middle {
@@ -89,7 +89,7 @@
 }
 
 .inform__middle__logo {
-  fill: #bfbfbf;
+  fill: var(--card-place-color);
   height: 53px;
   width: 53px;
   margin-right: 16px;
@@ -106,5 +106,5 @@
 }
 
 .person__country {
-  color: #bfbfbf;
+  color: var(--card-place-color);
 }

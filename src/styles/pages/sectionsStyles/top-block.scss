@@ -18,7 +18,7 @@
   &__title {
     font-size: 50px;
     font-weight: 500;
-    color: #fff;
+    color: var(--white-color);
     margin: 175px 0 145px;
     max-width: 545px;
   }
@@ -26,12 +26,12 @@
     display: grid;
     row-gap: 25px;
     align-content: end;
-    background-color: #fff;
+    background-color: var(--white-color);
     height: 68px;
     border-radius: 8px;
   }
   &__form__button {
-    background-color: #3077c6;
+    background-color: var(--logo-bgcolor);
     width: 198px;
     border-radius: 8px;
     padding: 20px 60px;
@@ -39,7 +39,7 @@
     font-size: 24px;
     line-height: 28px;
     text-align: center;
-    color: #fff;
+    color: var(--white-color);
   }
   &__apps {
     margin: 120px auto;
@@ -132,12 +132,12 @@
 }
 
 .label-dash {
-  color: #fff;
+  color: var(--white-color);
 }
 
 .form {
   &__label {
-    color: #fff;
+    color: var(--white-color);
     font-size: 18px;
     padding-left: 24px;
   }

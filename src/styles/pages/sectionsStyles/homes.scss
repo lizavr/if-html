@@ -1,5 +1,5 @@
 .homes {
-  background-color: #eaf0f9;
+  background-color: var(--center-bgcolor);
   order: 3;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .circle {
-  background-color: #f3f3f4;
+  background-color: var(--circle-color);
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -36,7 +36,7 @@
 
 .arrow {
   content: '';
-  border: 2px solid #383838;
+  border: 2px solid var(--text-color);
   border-radius: 2px;
   border-left: 0;
   border-bottom: 0;
@@ -50,12 +50,12 @@
 }
 
 .card__title {
-  color: #3077c6;
+  color: var(--logo-bgcolor);
   margin-bottom: 24px;
 }
 
 .card__place {
-  color: #bfbfbf;
+  color: var(--card-place-color);
 }
 
 /* for desktop */

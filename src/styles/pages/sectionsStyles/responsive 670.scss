@@ -59,7 +59,7 @@
 
   .sign {
     order: 6;
-    background-color: #fff;
+    background-color: var(--white-color);
   }
 
   .sign__common {
@@ -83,7 +83,7 @@
   }
 
   .sign__logo__block {
-    background-color: #3077c6;
+    background-color: var(--logo-bgcolor);
     min-height: 60px;
     min-width: 60px;
     border-radius: 8px;
@@ -96,20 +96,20 @@
     display: inline-block;
     height: 10px;
     width: 53px;
-    fill: #fff;
+    fill: var(--white-color);
     top: calc(50% - 5px);
   }
 
   .sign__install__mobile {
     display: inline-block;
-    background-color: #fff;
+    background-color: var(--white-color);
     font-size: 14px;
-    color: #3077c6;
+    color: var(--logo-bgcolor);
   }
 
   .review {
     order: 5;
-    background-color: #eaf0f9;
+    background-color: var(--center-bgcolor);
   }
 
   .review__title {
