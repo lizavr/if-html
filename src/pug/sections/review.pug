@@ -13,11 +13,11 @@ mixin review__card(img,alt,price,hotel,place,mark,rev,name,country,flag,infBot)
     .review__card__inform
       .inform__top
         .top__name
-          .top__name__hotel #{ hotel }
-          .top__name__place #{ place }
+          p.top__name__hotel #{ hotel }
+          p.top__name__place #{ place }
         .top__rating
           button.top__rating__mark #{ mark }
-          .top__rating__reviews #{ rev }
+          p.top__rating__reviews #{ rev }
       .inform__middle
         svg.inform__middle__logo
           use(href='#acc')
@@ -27,8 +27,8 @@ mixin review__card(img,alt,price,hotel,place,mark,rev,name,country,flag,infBot)
             svg.country__flag
               use(href=flag)
             | #{ country }
-      .inform__bottom
-        | #{infBot}
+      p.inform__bottom
+        | #{ infBot }
 
 mixin review
   section.review

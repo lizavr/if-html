@@ -28,9 +28,13 @@ body {
   margin: 0 auto;
   padding: 120px 16px;
 }
-img, svg {
+img,
+svg {
   vertical-align: inherit;
 }
 a:hover {
   color: #ffffff;
+}
+p {
+  margin-bottom: inherit;
 }
