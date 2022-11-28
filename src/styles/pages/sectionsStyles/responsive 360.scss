@@ -32,7 +32,7 @@
   }
 
   .container__mobile {
-    padding-top: 24px;
+    padding-top: calc(var(--gap) * 3);
   }
 
   .navigation__link__icon-night {
@@ -131,9 +131,12 @@
     margin-top: 32px;
     margin-bottom: 0;
   }
+  .advantages__item:first-child {
+    margin-top: 0;
+  }
 
   .advantages__item__text {
-    margin-top: 16px;
+    margin-top: calc(var(--gap) * 2);
     font-size: 15px;
   }
 
@@ -144,7 +147,7 @@
   .homes__card__img {
     width: 156px;
     height: 156px;
-    margin-bottom: 8px;
+    margin-bottom: var(--gap);
   }
 
   .card__title {
@@ -160,7 +163,9 @@
     padding-top: 0;
     padding-bottom: 0;
   }
-
+  .sign__logo__block {
+    margin-left: 0;
+  }
   .footer__column__navigation {
     font-size: 15px;
   }
