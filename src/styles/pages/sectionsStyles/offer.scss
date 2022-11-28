@@ -7,7 +7,7 @@
   text-align: center;
   font-weight: 500;
   font-size: 40px;
-  margin-bottom: 105px;
+  margin-bottom: calc(105px - 20px);
 }
 
 .line__title::after {

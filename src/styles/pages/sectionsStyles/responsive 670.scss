@@ -3,7 +3,7 @@
   .card__place {
     font-size: 12px;
   }
-  .circle{
+  .circle {
     height: 28px;
     width: 28px;
   }
@@ -16,14 +16,14 @@
   }
 
   .card__img-dest {
-    width: 155px;
-    height: 155px;
+    width: 156px;
+    height: 156px;
   }
 
   .shadow-dest:hover::after {
     content: '';
-    height: 155px;
-    width: 155px;
+    height: 156px;
+    width: 156px;
   }
 
   .button__homes {
@@ -39,15 +39,11 @@
 
   .destination__nav {
     margin-bottom: 0;
-    height: calc(156px + 90px);
-  }
-
-  .card__title-dest {
-    margin-top: 0;
+    height: calc(156px + 75px);
   }
 
   .nav__content {
-    top: 70px;
+    top: 56px;
   }
 
   .container__sign {
