@@ -32,7 +32,7 @@
   }
 
   .container__mobile {
-    padding-top: 24px;
+    padding-top: calc(var(--gap) * 3);
   }
 
   .navigation__link__icon-night {
@@ -131,9 +131,12 @@
     margin-top: 32px;
     margin-bottom: 0;
   }
+  .advantages__item:first-child {
+    margin-top: 0;
+  }
 
   .advantages__item__text {
-    margin-top: 16px;
+    margin-top: calc(var(--gap) * 2);
     font-size: 15px;
   }
 
@@ -141,26 +144,15 @@
     padding: 0;
   }
 
-  .circle {
-    height: 28px;
-    width: 28px;
-    top: 28%;
-    right: -12px;
-  }
-
-  .arrow {
-    height: 8px;
-    width: 8px;
-  }
-
-  .card__img {
-    width: 155px;
-    height: 155px;
-    margin-bottom: 8px;
+  .homes__card__img {
+    width: 156px;
+    height: 156px;
+    margin-bottom: var(--gap);
   }
 
   .card__title {
     margin-bottom: 4px;
+    margin-top: 0;
   }
 
   .button__homes {
@@ -171,7 +163,9 @@
     padding-top: 0;
     padding-bottom: 0;
   }
-
+  .sign__logo__block {
+    margin-left: 0;
+  }
   .footer__column__navigation {
     font-size: 15px;
   }
@@ -181,8 +175,11 @@
   }
 
   .footer__copyright {
-    margin-top: 32px;
-    text-align: center;
+    margin-top: 30px;
+    padding-left: 0;
     font-size: 12px;
+  }
+  .footer__ul {
+    padding-left: var(--gap);
   }
 }

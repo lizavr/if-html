@@ -9,7 +9,7 @@
 
 .footer__columns {
   display: flex;
-  column-gap: 20px;
+  column-gap:var(--gap);
 }
 
 .footer__column__navigation {
@@ -45,5 +45,6 @@
 .footer__copyright {
   color: var(--white-color);
   font-size: 14px;
-  margin-top: 60px;
+  margin-top: 64px;
+  padding-left: 2rem
 }

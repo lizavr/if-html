@@ -3,24 +3,31 @@
   .card__place {
     font-size: 12px;
   }
-
+  .circle {
+    height: 28px;
+    width: 28px;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 12px;
+  }
   .places {
     padding: 0 16px;
   }
 
   .card__img-dest {
-    width: 155px;
-    height: 155px;
+    width: 156px;
+    height: 156px;
   }
 
-  .shadow:hover::after {
+  .shadow-dest:hover::after {
     content: '';
-    height: 155px;
-    width: 155px;
+    height: 156px;
+    width: 156px;
   }
 
   .button__homes {
-    padding: 5px;
+    padding: calc(var(--gap) / 2);
     font-size: 15px;
     top: calc(50% - 16px);
     left: calc(50% - 96px);
@@ -32,15 +39,11 @@
 
   .destination__nav {
     margin-bottom: 0;
-    height: calc(156px + 90px);
-  }
-
-  .card__title-dest {
-    margin-top: 0;
+    height: calc(156px + 75px);
   }
 
   .nav__content {
-    top: 70px;
+    top: 56px;
   }
 
   .container__sign {
@@ -105,6 +108,7 @@
     background-color: var(--white-color);
     font-size: 14px;
     color: var(--logo-bgcolor);
+    font-weight: 500;
   }
 
   .review {
@@ -122,7 +126,7 @@
   }
 
   .review__card__img {
-    padding-bottom: 12px;
+    padding-bottom: 8px;
   }
 
   .review__card__price,
@@ -135,21 +139,21 @@
   }
 
   .review__card__inform {
-    min-width: 325px;
+    max-width: 325px;
     padding: 0;
   }
 
   .inform__top {
-    padding-bottom: 12px;
+    padding-bottom: 16px;
   }
 
   .top__name__hotel {
-    padding-bottom: 8px;
+    padding-bottom: var(--gap);
   }
 
   .top__rating__mark {
-    margin-bottom: 4px;
-    padding: 3px 9px;
+    margin-bottom: calc(var(--gap) / 2);
+    padding: 3px 8px;
     font-size: 15px;
   }
 
@@ -162,16 +166,16 @@
   }
 
   .inform__middle__logo {
-    margin-right: 8px;
+    margin-right: var(--gap);
     height: 45px;
     width: 45px;
   }
 
   .person__name {
-    margin-bottom: 4px;
+    margin-bottom: calc(var(--gap) / 2);
   }
 
   .country__flag {
-    margin-right: 4px;
+    margin-right: calc(var(--gap) / 2);
   }
 }

@@ -9,7 +9,9 @@
   font-size: 40px;
   margin-bottom: 105px;
 }
-
+.line__title {
+  margin-bottom: calc(105px - 20px);
+}
 .line__title::after {
   content: '';
   display: block;

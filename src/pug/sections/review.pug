@@ -1,8 +1,8 @@
 -
   var cards = [
-          {img:'ubudBali.jpg',alt:'Ubud Bali Resort&SPA',price:'250',hotel:'Ubud Bali Resort&amp;SPA',place:'Bali, Indonesia',mark:'9,4',rev:'1324 reviews',name:'Hanna Ivanova',country:'Ukraine',flag:'#ua',infBot:'Great location, really pleasant and clean rooms, but the thing that makes this such a good place to stay are the staff. All of the people are incredibly helpful and generous with their time and advice.'},
-    {img:'kingKong.jpg',alt:'Rokoko Hotel',price:'100',hotel:'Rokoko Hotel',place:'Ourika, Marocco',mark:'8,9',rev:'2016 reviews',name:'Adam Smith',country:'USA',flag:'#us',infBot:'I have been in this hostel for a month and here is the best hostel of all Excellent management of excellent and ethical staff and bedrooms Bathrooms are always clean and excellentMost importantly, those who work here are kind and good-natured.'},
-    {img:'rokoko.jpg',alt:'Ubud Bali Resort&SPA',price:'250',hotel:'Ubud Bali Resort&amp;SPA',place:'Bali, Indonesia',mark:'9,1',rev:'815 reviews',name:'Anika Messer',country:'Germany',flag:'#de',infBot:'Efficient, friendly, professional, and appropriately attentive. Great hotel in a great location. Easy access to all  the surrounding historical sites. Staff is fantastic. Will  definitely stay at this location during my next stay in  Morocco.'}
+          {img:'ubudBali.jpg',alt:'Ubud Bali Resort&SPA',price:'250',hotel:'Ubud Bali Resort&SPA',place:'Bali, Indonesia',mark:'9,4',rev:'1324 reviews',name:'Hanna Ivanova',country:'Ukraine',flag:'#ua',infBot:'Great location, really pleasant and clean rooms, but the thing that makes this such a good place to stay are the staff. All of the people are incredibly helpful and generous with their time and advice.'},
+    {img:'kingKong.jpg',alt:'King Kong Hostel',price:'40',hotel:'King Kong Hostel',place:'Rotterdam, Netherlands',mark:'8,9',rev:'2016 reviews',name:'Adam Smith',country:'USA',flag:'#us',infBot:'I have been in this hostel for a month and here is the best hostel of all Excellent management of excellent and ethical staff and bedrooms Bathrooms are always clean and excellentMost importantly, those who work here are kind and good-natured.'},
+    {img:'rokoko.jpg',alt:'Rokoko Hotel',price:'100',hotel:'Rokoko Hotel',place:'Ourika, Marocco',mark:'9,1',rev:'815 reviews',name:'Anika Messer',country:'Germany',flag:'#de',infBot:'Efficient, friendly, professional, and appropriately attentive. Great hotel in a great location. Easy access to all  the surrounding historical sites. Staff is fantastic. Will  definitely stay at this location during my next stay in  Morocco.'}
   ]
 
 mixin review__card(img,alt,price,hotel,place,mark,rev,name,country,flag,infBot)
@@ -13,11 +13,11 @@ mixin review__card(img,alt,price,hotel,place,mark,rev,name,country,flag,infBot)
     .review__card__inform
       .inform__top
         .top__name
-          .top__name__hotel #{ hotel }
-          .top__name__place #{ place }
+          p.top__name__hotel #{ hotel }
+          p.top__name__place #{ place }
         .top__rating
           button.top__rating__mark #{ mark }
-          .top__rating__reviews #{ rev }
+          p.top__rating__reviews #{ rev }
       .inform__middle
         svg.inform__middle__logo
           use(href='#acc')
@@ -27,8 +27,8 @@ mixin review__card(img,alt,price,hotel,place,mark,rev,name,country,flag,infBot)
             svg.country__flag
               use(href=flag)
             | #{ country }
-      .inform__bottom
-        | #{infBot}
+      p.inform__bottom
+        | #{ infBot }
 
 mixin review
   section.review

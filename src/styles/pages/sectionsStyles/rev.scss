@@ -4,7 +4,6 @@
 
 .review__cards {
   display: flex;
-  gap: 16px;
   position: relative;
   justify-content: space-evenly;
 }
@@ -14,8 +13,8 @@
   width: 40px;
   position: absolute;
   top: 25%;
-  right: -40px;
-  margin-right: 16px;
+  right: -20px;
+  margin-right: calc(var(--gap) * 2);
 }
 
 .review__card {
@@ -48,7 +47,7 @@
   background-color: var(--center-bgcolor);
   padding: 24px;
   flex: 1 1 auto;
-  min-width: 400px;
+  width: 400px;
 }
 
 .inform__top {
@@ -60,7 +59,7 @@
 }
 
 .top__name__hotel {
-  padding-bottom: 16px;
+  padding-bottom: calc(var(--gap) * 2);
 }
 
 .top__rating {
@@ -71,10 +70,10 @@
 
 .top__rating__mark {
   color: var(--white-color);
-  margin-bottom: 8px;
+  margin-bottom: calc(var(--gap) * 2);
   background-color: var(--footer-bgcolor);
-  border-radius: 8px;
-  padding: 4px 11px;
+  border-radius: var(--border-radius);
+  padding: 4px 12px;
   font-size: 18px;
 }
 
@@ -85,24 +84,24 @@
 
 .inform__middle {
   display: flex;
-  margin-bottom: 24px;
+  margin-bottom: calc(var(--gap) * 3);
 }
 
 .inform__middle__logo {
   fill: var(--card-place-color);
   height: 53px;
   width: 53px;
-  margin-right: 16px;
+  margin-right: calc(var(--gap) * 2);
 }
 
 .person__name {
-  margin-bottom: 8px;
+  margin-bottom: var(--gap);
 }
 
 .country__flag {
-  width: 18px;
-  height: 11px;
-  margin-right: 8px;
+  width: 16px;
+  height: 12px;
+  margin-right: var(--gap);
 }
 
 .person__country {

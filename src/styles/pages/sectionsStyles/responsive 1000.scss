@@ -1,14 +1,10 @@
 @media (max-width: 1000px) {
-  .place__card:nth-child(3) {
+  .dest__place__card:nth-child(3) {
     display: none;
   }
 
-  .place__card {
+  .dest__place__card{
     width: 50%;
-  }
-
-  .arrow__right {
-    display: block;
   }
 
   .arrow__bottom {
