@@ -1,0 +1,111 @@
+-
+  var navTabs = [
+    {
+      tabIdFor:'tab-one',
+      navTabLabel:'Regions',
+      isChecked: true,
+      placeDestCards: [
+        {
+          imgDest:'maldives.jpg',
+          altDest:'Maldives',
+          titleDest:'Maldives'
+        },
+        {
+          imgDest:'spain.jpg',
+          altDest:'Spain',
+          titleDest:'Spain'
+        },
+        {
+          imgDest:'norway.jpg',
+          altDest:'Norway',
+          titleDest:'Norway'
+        },
+        {
+          imgDest: 'island.jpg',
+          altDest: 'Island',
+          titleDest: 'Island'
+        }]
+    },
+    {
+      tabIdFor: 'tab-two',
+      navTabLabel: 'Cities',
+      isChecked: false,
+      placeDestCards: [
+        {
+          imgDest: 'berlin.jpg',
+          altDest: 'Berlin, Germany',
+          titleDest: 'Berlin, Germany'
+        },
+        {
+          imgDest: 'paris.jpg',
+          altDest: 'Paris, France',
+          titleDest: 'Paris, France'
+        },
+        {
+          imgDest: 'budapest.jpg',
+          altDest: 'Budapest, Hungary',
+          titleDest: 'Budapest, Hungary'
+        },
+        {
+          imgDest: 'london.jpg',
+          altDest: 'London, United Kingdom',
+          titleDest: 'London, United Kingdom'
+        }]
+    },
+    {
+      tabIdFor: 'tab-three',
+      navTabLabel: 'Places',
+      isChecked: false,
+      placeDestCards: [
+        {
+          imgDest: 'edinburghCastle.jpg',
+          altDest: 'Edinburgh Castle, Edinburgh, United Kingdom',
+          titleDest: 'Edinburgh Castle, Edinburgh, United Kingdom'
+        },
+        {
+          imgDest: 'neuschwanstein.jpg',
+          altDest: 'Neuschwanstein, Fussen, Germany',
+          titleDest: 'Neuschwanstein, Fussen, Germany'
+        },
+        {
+          imgDest: 'begBen.jpg',
+          altDest: 'Big Ben, London, United Kingdom',
+          titleDest: 'Big Ben, London, United Kingdom'
+        },
+        {
+          imgDest: 'colosseum.jpg',
+          altDest: 'Colosseum, Roma, Italy',
+          titleDest: 'Colosseum, Roma, Italy'
+        }]
+    }]
+
+mixin placeDestCard(imgDest, altDest, titleDest)
+  .place__card
+    .shadow
+      img.card__img.card__img-dest(src=require('../../assets/images/destination/' + imgDest), alt='#{ altDest }')
+      button.button__homes(type='submit')
+        | Book now
+    .card__title.card__title-dest #{ titleDest }
+
+mixin navTab(tabIdFor,navTabLabel,isChecked,placeDestCards)
+  .nav__tab
+    if (isChecked)
+      input(id=tabIdFor, type='radio', name='tab-group', checked='')
+    else
+      input(id=tabIdFor, type='radio', name='tab-group')
+    label.nav__tab__label(for=tabIdFor) #{ navTabLabel }
+    .nav__content.places
+      each placeCard in placeDestCards
+        +placeDestCard(placeCard.imgDest, placeCard.altDest, placeCard.titleDest)
+
+mixin destination
+  section.destination
+    .container
+      h2.title.line__title.destination__title
+        | The best destinations
+      .destination__nav
+        each navTab in navTabs
+          +navTab(navTab.tabIdFor,navTab.navTabLabel,navTab.isChecked,navTab.placeDestCards)
+
+      .arrow__bottom
+        img(src=require('../../assets/images/icons/arrow.svg'), alt='arrow')

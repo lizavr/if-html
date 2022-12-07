@@ -1,0 +1,47 @@
+.sign {
+  background-color: var(--center-bgcolor);
+  order: 5;
+}
+
+.container__sign {
+  padding: 52px 16px;
+}
+
+.sign__common {
+  display: flex;
+  position: relative;
+}
+
+.sign__link {
+  margin-right: 24px;
+  color: var(--white-color);
+}
+
+.sign__desktop__user {
+  height: 86px;
+  width: 86px;
+}
+
+.sign__main__text {
+  margin-bottom: 20px;
+}
+
+.sign__desktop__main__btn {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.sign__cross {
+  height: 26px;
+  width: 26px;
+  top: -26px;
+  right: 52px;
+  position: absolute;
+}
+
+.sign__main__text-mobile,
+.sign__install__mobile,
+.sign__mobile,
+.sign__logo {
+  display: none;
+}

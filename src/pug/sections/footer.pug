@@ -1,0 +1,42 @@
+-
+  var uls = [
+    {
+    linkMain: 'About', lis:
+            [
+              {a: 'How Triphouse works'}, {a: 'Careers'},{a: 'Privacy'}, {a: 'Terms'}
+            ]
+    },
+    {
+      linkMain: 'Property types', lis:
+              [
+                {a: 'Guest houses'}, {a: 'Hotels'},{a: 'Apartments'}, {a: 'Villas'}, {a: 'Holiday homes'}, {a: 'Hostels'}
+              ]
+    },
+    {
+      linkMain: 'Support', lis:
+              [
+                {a: 'Contact Customer Service'}, {a: 'FAQ'}
+              ]
+    }
+  ]
+mixin ul(col,lis)
+  ul.col-lg-4.col-md-3.col-xs-1
+    a.footer__column__navigation(href='#') #{ col }
+    each li in lis
+      +li(li)
+
+mixin li(item)
+  li.column__navigation__element
+    a.column__navigation__link(href='#') #{ item.a }
+
+mixin footer
+  footer.footer
+    .container
+      div
+        svg.footer__logo-mobile
+          use(href='#logo')
+      .footer__columns
+        each ul in uls
+          +ul(ul.linkMain, ul.lis)
+      .footer__copyright
+        | &copy; 2022Triphouse, Inc. All rights reserved

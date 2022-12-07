@@ -1,0 +1,19 @@
+-
+  var advs = [
+      {icon:'#support',text:'Support 24/7'},
+      {icon:'#communicate',text:'Communicate directly'},
+      {icon:'#online',text:'Book online'},
+      {icon:'#reviews',text:'Real guest reviews'}
+  ]
+mixin offer__advantage(icon,itemText)
+  .advantages__item.col-lg-3.col-md-6.col-xs-6
+    svg.advantages__item__img
+      use(href=icon)
+    p.advantages__item__text #{ itemText }
+mixin offer
+  section.offer
+    .container.container__mobile
+      h2.title.line__title What do we offer
+      .offer__advantages
+        each adv in advs
+          +offer__advantage(adv.icon,adv.text)

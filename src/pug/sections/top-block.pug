@@ -1,0 +1,58 @@
+mixin top-block
+  section.top-block
+    .top-block__filter
+      .top-block__container
+        +header
+        h1.top-block__title
+          | Discover stays
+          br
+          |
+          | to live, work or just relax
+        form.top-block__forms.lg-10-col.md-6-col.border__grid(action='#', method='post')
+          .form__city-input.border-hover
+            svg.search
+              use(href='#search')
+            input#city.form__input.city__input-mobile.border__grid.md-6-col(type='text', placeholder='New York')
+          .form__city-label
+            label.form__label(for='city') Your destination or hotel name
+          .form__date-in-label
+            label.form__label.form__label-mobile(for='datein') Check-in
+          .label-dash &ndash;
+          .form__date-out-label
+            label.form__label.form__label-mobile(for='dateout')
+              | Check-out
+          .form__date.form__date--border.border-hover.lg-3-col.md-6-col
+            .date-in-input
+              input#datein.form__input.form__input-date.border__grid(type='text', placeholder='Tue 15 Sept')
+            .dash-input &ndash;
+            .date-out-input
+              input#dateout.form__input.form__input-date.border__grid.form__input-last(
+                type='text',
+                placeholder='Sat 19 Sept'
+              )
+          .form__people.border-hover.border__grid.lg-5-col.md-6-col-people
+            .adults
+              .people__label
+                label.adults-label.form__input(for='adults') Adults
+              .people__input
+                input#adults.form__input.form__input-people(type='text', placeholder='2')
+            .dash-input &ndash;
+            .children.children-border
+              .people__label
+                label.children-label.form__input(for='children') Children
+              .people__input
+                input#children.form__input.form__input-people.children__position(type='text', placeholder='0')
+            .dash-input &ndash;
+            .room
+              .people__label
+                label.form__input.room-label(for='room') Room
+              .people__input
+                input#room.form__input.form__input-people.form__input-last(type='text', placeholder='0')
+            .people__border-top
+            .people__border-bottom
+          button.top-block__form__button.border__grid(type='submit')
+            | Search
+        .top-block__apps
+          img.top-block__app-google(src=require('../../assets/images/icons/google-play.svg'), alt='google-play icon')
+          svg.top-block__app-store
+            use(href='#app')

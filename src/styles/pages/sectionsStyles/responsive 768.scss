@@ -1,0 +1,163 @@
+@media (max-width: 768px) {
+  .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .col-md-1 {
+    width: var(--width-col);
+  }
+
+  .col-md-2 {
+    width: calc(var(--width-col) * 2);
+  }
+
+  .col-md-3 {
+    width: calc(100% / 4);
+  }
+
+  .col-md-4 {
+    width: calc(var(--width-col) * 4);
+  }
+
+  .col-md-5 {
+    width: calc(var(--width-col) * 5);
+  }
+
+  .col-md-6 {
+    width: calc(100% / 2);
+  }
+
+  .col-md-7 {
+    width: calc(var(--width-col) * 7);
+  }
+
+  .col-md-8 {
+    width: calc(var(--width-col) * 8);
+  }
+
+  .col-md-9 {
+    width: calc(var(--width-col) * 9);
+  }
+
+  .col-md-10 {
+    width: calc(var(--width-col) * 10);
+  }
+
+  .col-md-11 {
+    width: calc(var(--width-col) * 11);
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+
+  .advantages__item {
+    margin-bottom: 50px;
+  }
+
+  .footer__column__navigation {
+    text-decoration: underline;
+  }
+
+  .header__inner {
+    padding: 18px 0;
+  }
+
+  .header__inner__logo {
+    height: 40px;
+    width: 140px;
+  }
+
+  .column__navigation__link {
+    display: none;
+  }
+
+  .navigation__block-one {
+    display: none;
+  }
+
+  .navigation__link:last-child {
+    margin: 15px;
+  }
+
+  .navigation__link__icon-night {
+    width: 25px;
+    height: 25px;
+  }
+
+  .navigation__link__icon-acc {
+    width: 30px;
+    height: 30px;
+  }
+
+  .navigation__link {
+    margin-right: 10px;
+  }
+
+  .navigation__link:last-child {
+    margin: 0;
+  }
+
+  .burger__menu {
+    position: relative;
+    width: 35px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 16px;
+  }
+
+  .burger__menu::before,
+  .burger__menu::after {
+    content: '';
+    background-color: var(--white-color);
+    height: 3px;
+  }
+
+  .burger__menu__center {
+    background-color: var(--white-color);
+    height: 3px;
+  }
+
+  .top-block__title {
+    font-size: 35px;
+    margin: 100px 0 90px;
+    width: 100%;
+  }
+
+  .footer__logo-mobile {
+    display: block;
+    width: 98px;
+    height: 20px;
+    stroke: var(--white-color);
+    fill: var(--white-color);
+  }
+
+  .footer__columns {
+    justify-content: center;
+  }
+
+  .footer__copyright {
+    margin-top: 32px;
+    text-align: center;
+  }
+
+  .nav__tab__label {
+    background-color: var(--white-color);
+    padding: 5px 15px;
+    margin-right: 16px;
+    border: 1px solid var(--circle-color);
+    font-size: 19px;
+  }
+
+  .title {
+    font-size: 35px;
+    margin-bottom: 60px;
+  }
+
+  .label__places-span {
+    display: none;
+  }
+}

@@ -1,0 +1,22 @@
+-
+  var homeCards = [
+      { img:'leopold.jpg',alt:'hotel leopold',title:'Hotel Leopold',place:'Saint Petersburg, Russia'},
+      { img:'sunshine.jpg',alt:'hotel sunshine',title:'Apartment Sunshine',place:'Santa Cruz de Tenerife, Spain'},
+      { img:'kunerad.jpg',alt:'hotel kunerad',title:'Villa Kunerad',place:'Vysokie Tatry, Slowakia'},
+      { img:'friendship.jpg',alt:'hotel friendship',title:'Hostel Friendship',place:'Berlin, Germany'}
+  ]
+mixin placeCard(img,alt,title,place)
+  .place__card
+    img.card__img(src=require('../../assets/images/' + img), alt='#{ alt }')
+    .card__title #{ title }
+    .card__place #{ place }
+
+mixin homes
+  section.homes
+    .container
+      h2.title Homes guests loves
+      .places
+        each card in homeCards
+          +placeCard(card.img,card.alt,card.title,card.place)
+        .circle
+          .arrow

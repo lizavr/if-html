@@ -1,0 +1,21 @@
+mixin sign
+  section.sign
+    .container.container__sign
+      .sign__common
+        a.sign__link(href='#')
+          svg.sign__desktop__user
+            use(href='#user')
+        a.sign__logo__block(href='#')
+          svg.sign__logo
+            use(href='#logo')
+        .sign__desktop__main
+          .sign__main__text
+            | Sign up
+            span.sign__main__text-mobile in the app
+            |
+            | and get 20% off your first booking
+          button.sign__desktop__main__btn(type='submit')
+            | Sign up
+        svg.sign__cross
+          use(href='#cross')
+        button.sign__install__mobile(type='submit') Install

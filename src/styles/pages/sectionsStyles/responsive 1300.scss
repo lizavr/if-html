@@ -1,0 +1,13 @@
+@media (max-width: 1300px) {
+  .place__card:nth-child(4) {
+    display: none;
+  }
+
+  .place__card {
+    width: 33%;
+  }
+
+  .circle {
+    top: 35%;
+  }
+}
